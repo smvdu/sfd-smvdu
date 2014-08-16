@@ -15,7 +15,8 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'myDirectives'
   ])
   .config(function ($routeProvider) {
     $routeProvider
