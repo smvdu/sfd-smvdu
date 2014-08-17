@@ -1,79 +1,135 @@
-/* Space out content a bit */
+@font-face {
+  src: url('../fonts/stratum-2-web.woff');
+  font-family: 'stratum';
+}
+
+* {
+  transition: 0.3s all;
+}
+
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  font-family: 'stratum';  
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
+ul {
+  list-style-type: none;
 }
 
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
-}
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
-  padding-bottom: 19px;
+ul li {
+  display: inline-block;
+  margin-right: 20px;  
 }
 
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
+ul li:hover {
+  border-bottom: 2px solid #FEF9C4;
 }
 
-/* Customize container */
-@media (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
-}
-.container-narrow > hr {
-  margin: 30px 0;
+#main-header{
+  position: fixed;
+  color: #FEF9C4;
+  width: 100%;
+  padding: 70px;
+  background-color: #EE692A;
 }
 
-/* Main marketing message and sign up button */
-.jumbotron {
+#main-header div {
+  font-size: 2.5vw;
+  display: inline-block;
+  float: left;
+  padding-top: 5px;
+}
+
+#main-header nav{
+  float: right;
+  font-size: 1.5vw;
+  transition: 0.5s all;
+  padding-top: 13px;
+}
+
+#home {
   text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-}
-.jumbotron .btn {
-  font-size: 21px;
-  padding: 14px 24px;
+  background-color: #EE692A;
+  color: #FEF9C4;
+  padding: 175px 0px 100px 0px;
 }
 
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-}
-.marketing p + h4 {
-  margin-top: 28px;
+#sfd-title {
+  font-size: 5vw;
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
+#smvdu {
+  font-size: 2.5vw;
+}
+
+#on-date {
+  font-size: 3vw;
+}
+
+.btn-outline {
+  color: #FEF9C4;
+  border-color: #FEF9C4;
+  border-width: 2px;
+  background-color: transparent;
+  font-size: 2.5vw;
+  margin-top: 20px; 
+  width: 20%;
+}
+
+.btn-outline:hover {
+    background-color: #FEF9C4;
+    color: #EE692A;
+}
+
+#about {
+  background-color: #FEF9C4;
+  color: #EE692A;
+  padding: 150px 100px;
+  font-size: 2vw;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  
+  ul li {
+    margin-right: 15px;
   }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
+
+  #main-header {
+    padding: 50px;
   }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
+
+  #main-header div {
+    font-size: 2.8vw;
   }
+
+  #main-header nav {
+    font-size: 1.8vw;
+    padding-top: 10px;
+  }
+
+  #home {
+    padding: 140px 0px 75px 0px;
+  }
+
+  #sfd-title {
+  font-size: 5.5vw;
+  }
+
+  #smvdu {
+    font-size: 3vw;
+  }
+
+  #on-date {
+    font-size: 3.5vw;
+  }
+
+  .btn-outline {
+    font-size: 3vw;
+    margin-top: 15px; 
+  }
+
+  #about {
+    padding: 125px 75px;
+    font-size: 2.5vw;
+  }
+
 }
