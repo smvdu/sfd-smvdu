@@ -3,8 +3,12 @@
   font-family: 'stratum';
 }
 
+* {
+  transition: 0.3s all;
+}
+
 body {
-  font-family: 'stratum';
+  font-family: 'stratum';  
 }
 
 ul {
@@ -13,14 +17,11 @@ ul {
 
 ul li {
   display: inline-block;
-  margin-right: 20px;
-  font-size: 1.5vw;
-  transition: 0.5s all;
+  margin-right: 20px;  
 }
 
 ul li:hover {
   border-bottom: 2px solid #FEF9C4;
-  transition: 0.5s all;
 }
 
 #main-header{
@@ -28,22 +29,26 @@ ul li:hover {
   color: #FEF9C4;
   width: 100%;
   padding: 70px;
-  background-color: #EE352A;
+  background-color: #EE692A;
 }
 
 #main-header div {
   font-size: 2.5vw;
   display: inline-block;
   float: left;
+  padding-top: 5px;
 }
 
 #main-header nav{
   float: right;
+  font-size: 1.5vw;
+  transition: 0.5s all;
+  padding-top: 13px;
 }
 
 #home {
   text-align: center;
-  background-color: #EE352A;
+  background-color: #EE692A;
   color: #FEF9C4;
   padding: 175px 0px 100px 0px;
 }
@@ -72,12 +77,59 @@ ul li:hover {
 
 .btn-outline:hover {
     background-color: #FEF9C4;
-    color: #EE352A;
+    color: #EE692A;
 }
 
 #about {
   background-color: #FEF9C4;
-  color: #EE352A;
-  padding: 200px 100px;
+  color: #EE692A;
+  padding: 150px 100px;
   font-size: 2vw;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  
+  ul li {
+    margin-right: 15px;
+  }
+
+  #main-header {
+    padding: 50px;
+  }
+
+  #main-header div {
+    font-size: 2.8vw;
+  }
+
+  #main-header nav {
+    font-size: 1.8vw;
+    padding-top: 10px;
+  }
+
+  #home {
+    padding: 140px 0px 75px 0px;
+  }
+
+  #sfd-title {
+  font-size: 5.5vw;
+  }
+
+  #smvdu {
+    font-size: 3vw;
+  }
+
+  #on-date {
+    font-size: 3.5vw;
+  }
+
+  .btn-outline {
+    font-size: 3vw;
+    margin-top: 15px; 
+  }
+
+  #about {
+    padding: 125px 75px;
+    font-size: 2.5vw;
+  }
+
 }
