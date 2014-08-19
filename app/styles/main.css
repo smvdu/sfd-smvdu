@@ -8,8 +8,12 @@
 }
 
 html, body, body > div {
-  font-family: 'stratum'; 
-  height: 100%; 
+  font-family: 'stratum';
+  height: 100%;
+}
+
+.main-page{
+    position: relative;
 }
 
 section {
@@ -22,11 +26,20 @@ ul {
 
 ul li {
   display: inline-block;
-  margin-right: 20px;  
+  margin-right: 20px;
 }
 
 ul li:hover {
   border-bottom: 2px solid #FEF9C4;
+  cursor: pointer;
+}
+
+ul li a:hover{
+  text-decoration: none;
+}
+
+a.active {
+  border-bottom: 4px solid #34495E;
 }
 
 #main-header{
@@ -76,7 +89,7 @@ ul li:hover {
   border-width: 2px;
   background-color: transparent;
   font-size: 2.5vw;
-  margin-top: 20px; 
+  margin-top: 20px;
   width: 20%;
 }
 
@@ -118,7 +131,7 @@ ul li:hover {
 }
 
 @media (max-width: 1024px) and (min-width: 768px) {
-  
+
   ul li {
     margin-right: 15px;
   }
@@ -154,7 +167,7 @@ ul li:hover {
 
   .btn-outline {
     font-size: 3vw;
-    margin-top: 15px; 
+    margin-top: 15px;
   }
 
   #about {
