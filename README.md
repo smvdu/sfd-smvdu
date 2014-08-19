@@ -31,6 +31,11 @@ Run the Server using `grunt`:
 ```
 grunt serve
 ```
+**NOTE:** You should have grunt-cli installed globally to run the above command
+.If not installed run:
+```
+npm install -g grunt-cli
+```
 
 ## Contribution Guidelines
 
