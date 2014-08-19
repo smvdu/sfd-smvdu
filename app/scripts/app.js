@@ -8,7 +8,7 @@
  *
  * Main module of the application.
  */
-angular
+var app = angular
   .module('sfdSmvduApp', [
     'ngAnimate',
     'ngCookies',
@@ -16,9 +16,11 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'myDirectives'
-  ])
-  .config(function ($routeProvider) {
+    'myDirectives',
+    'duScroll'
+  ]);
+
+app.config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',

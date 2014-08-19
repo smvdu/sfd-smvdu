@@ -7,6 +7,7 @@
  * # MainCtrl
  * Controller of the sfdSmvduApp
  */
+
 angular.module('sfdSmvduApp')
   .controller('MainCtrl', function ($scope) {
     $scope.awesomeThings = [
@@ -34,7 +35,7 @@ angular.module('sfdSmvduApp')
           if(windowPos <= pos) {
             clearInterval(intervalId);
           }
-        }   
+        }
       }, timeInterval);
     };
   });
