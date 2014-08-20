@@ -12,10 +12,6 @@ html, body, body > div {
   height: 100%;
 }
 
-.main-page{
-    position: relative;
-}
-
 section {
   height: 90%;
 }
@@ -34,12 +30,19 @@ ul li:hover {
   cursor: pointer;
 }
 
+
+ul li a{
+  text-decoration: none;
+  color: #FEF9C4;
+}
+
 ul li a:hover{
   text-decoration: none;
+  color: #FEF9C4;
 }
 
 a.active {
-  border-bottom: 4px solid #34495E;
+  border-bottom: 4px solid #FEF9C4;
 }
 
 #main-header{
@@ -125,6 +128,30 @@ a.active {
   color: #ccc;
 }
 
+footer{
+  height: 14%;
+  background-color:  #c3c3c3;
+  color: #000;
+}
+
+footer div{
+  float: left;
+  font-size: 1.5vw;
+}
+
+#nav-left{
+  margin: 1.6em 1em 1em 5em;
+}
+
+#nav-git{
+  margin: 0.9em;
+  margin-left: 0;
+}
+
+#nav-right{
+  margin: 0.5em 2em 0.5em 10em;
+}
+
 /*reduces the padding of header*/
 .shrink {
   padding: 10px 70px !important;
@@ -175,4 +202,33 @@ a.active {
     font-size: 2.5vw;
   }
 
+  #nav-left{
+    margin: 1.6em 1em 1em 2em;
+  }
+
+  #nav-git{
+    margin: 0.9em;
+    margin-left: 0;
+  }
+
+  #nav-right{
+    margin: 0.5em 1em 0.5em 1em;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  #nav-left{
+    margin: 1.6em 1em 1em 2em;
+  }
+
+  #nav-git{
+    margin: 0.9em;
+    margin-left: 0;
+  }
+
+  #nav-right{
+    margin: 0.5em 1em 0.5em 1em;
+  }
 }
