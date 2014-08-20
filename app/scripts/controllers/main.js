@@ -16,7 +16,7 @@ angular.module('sfdSmvduApp')
       'Karma'
     ];
 
-    $scope.scrollTo = function(id) {
+/*    $scope.scrollTo = function(id) {
     	var element =  document.getElementById(id);
     	var pos = element.offsetTop;
     	var windowPos = $(document).scrollTop();
@@ -38,4 +38,5 @@ angular.module('sfdSmvduApp')
         }
       }, timeInterval);
     };
+*/
   });
