@@ -1,3 +1,4 @@
+/*-------------- Common Styles -------------*/
 @font-face {
   src: url('../fonts/stratum-2-web.woff');
   font-family: 'stratum';
@@ -13,7 +14,7 @@ html, body, body > div {
 }
 
 section {
-  height: 90%;
+  min-height: 90%;
 }
 
 ul {
@@ -22,7 +23,8 @@ ul {
 
 ul li {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 15px;
+  line-height: 1;
 }
 
 ul li:hover {
@@ -30,43 +32,47 @@ ul li:hover {
   cursor: pointer;
 }
 
-
-ul li a{
+a{
   text-decoration: none;
   color: #FEF9C4;
 }
 
-ul li a:hover{
+a:hover{
   text-decoration: none;
   color: #FEF9C4;
 }
 
 a.active {
-  border-bottom: 4px solid #FEF9C4;
+  border-bottom: 2px solid #FEF9C4;
 }
 
+/*reduces the padding of header*/
+.shrink {
+  padding: 10px 70px !important;
+}
+
+/*---------------- Header Section --------------*/
 #main-header{
   position: fixed;
   color: #FEF9C4;
   width: 100%;
   padding: 60px;
   background-color: #EE692A;
+  display: flex;  
+  justify-content: space-between;
+  align-items: center;
 }
 
 #main-header div {
-  font-size: 2.5vw;
-  display: inline-block;
-  float: left;
-  padding-top: 5px;
+  font-size: 2vw;
 }
 
 #main-header nav{
-  float: right;
-  font-size: 1.5vw;
+  font-size: 1.25vw;
   transition: 0.5s all;
-  padding-top: 13px;
 }
 
+/*---------------- Home Section ---------------*/
 #home {
   text-align: center;
   background-color: #EE692A;
@@ -74,8 +80,20 @@ a.active {
   padding: 175px 0px 100px 0px;
 }
 
+#home > div {  
+  display: flex;  
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#home > div div {
+  flex-grow: 1;
+}
+
 #sfd-title {
-  font-size: 5vw;
+  font-size: 7vw;
 }
 
 #smvdu {
@@ -83,7 +101,7 @@ a.active {
 }
 
 #on-date {
-  font-size: 3vw;
+  font-size: 2.5vw;
 }
 
 .btn-outline {
@@ -92,7 +110,7 @@ a.active {
   border-width: 2px;
   background-color: transparent;
   font-size: 2.5vw;
-  margin-top: 20px;
+  margin-top: 3%;
   width: 20%;
 }
 
@@ -122,7 +140,7 @@ a.active {
 }
 
 #events {
-  background-color: #B4AC55;
+  background-color: #3D3D3D;
   color: #fff;
 }
 
@@ -135,112 +153,6 @@ a.active {
   background-color: #34495E;
   color: #ccc;
 }
-
-footer{
-  height: 14%;
-  background-color:  #c3c3c3;
-  color: #000;
-}
-
-footer div{
-  float: left;
-  font-size: 1.5vw;
-}
-
-#nav-left{
-  margin: 1.6em 1em 1em 5em;
-}
-
-#nav-git{
-  margin: 0.9em;
-  margin-left: 0;
-}
-
-#nav-right{
-  margin: 0.5em 2em 0.5em 10em;
-}
-
-/*reduces the padding of header*/
-.shrink {
-  padding: 10px 70px !important;
-}
-
-@media (max-width: 1024px) and (min-width: 768px) {
-
-  ul li {
-    margin-right: 15px;
-  }
-
-  #main-header {
-    padding: 50px;
-  }
-
-  #main-header div {
-    font-size: 2.8vw;
-  }
-
-  #main-header nav {
-    font-size: 1.8vw;
-    padding-top: 10px;
-  }
-
-  #home {
-    padding: 140px 0px 75px 0px;
-  }
-
-  #sfd-title {
-  font-size: 5.5vw;
-  }
-
-  #smvdu {
-    font-size: 3vw;
-  }
-
-  #on-date {
-    font-size: 3.5vw;
-  }
-
-  .btn-outline {
-    font-size: 3vw;
-    margin-top: 15px;
-  }
-
-  #about {
-    padding: 125px 75px;
-    font-size: 2.5vw;
-  }
-
-  #nav-left{
-    margin: 1.6em 1em 1em 2em;
-  }
-
-  #nav-git{
-    margin: 0.9em;
-    margin-left: 0;
-  }
-
-  #nav-right{
-    margin: 0.5em 1em 0.5em 1em;
-  }
-
-}
-
-@media (max-width: 767px) {
-
-  #nav-left{
-    margin: 1.6em 1em 1em 2em;
-  }
-
-  #nav-git{
-    margin: 0.9em;
-    margin-left: 0;
-  }
-
-  #nav-right{
-    margin: 0.5em 1em 0.5em 1em;
-  }
-}
-
 
 #reach-left
 {
@@ -276,7 +188,6 @@ footer div{
   padding-right: 50px;
 }
 
-
 #location iframe
 {
   padding:1px;
@@ -311,6 +222,32 @@ footer div{
   transition: .5s;
 } 
 
+footer {
+  color: #000;
+  padding: 18px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#license-content {
+  flex-grow: 2;
+  margin-left: 10px;
+}
+
+#license-content a {
+  color: #EE692A;
+}
+
+#license-content a:hover, #follow a:hover {
+  text-decoration: underline;
+  color: #EE692A;
+}
+
+#follow a{
+  color: #474747;
+}
+
 @media all and (min-height:250px)  { #location{max-height:10rem;}}
 @media all and (min-height:350px)  { #location{max-height:15rem;}}
 @media all and (min-height:400px)  { #location{max-height:20rem;}}
@@ -327,3 +264,51 @@ footer div{
 .profile{width:120px;height: 120px;} #faculty{height:150px }#students{height:150px }}
 @media all and (min-width:1366px) { #location{max-width:70.5rem;}
 .profile{width:150px;height: 150px;} #faculty{height:180px }#students{height:180px }}
+
+
+/*--------------- Media Queries ----------------------*/
+/* Keep this section at the last */
+@media (max-width: 1024px) and (min-width: 768px) {
+
+  ul li {
+    margin-right: 12px;
+  }
+
+  #main-header {
+    padding: 50px;
+  }
+
+  #main-header div {
+    font-size: 2.5vw;
+  }
+
+  #main-header nav {
+    font-size: 1.7vw;
+  }
+
+  #home {
+    padding: 140px 0px 75px 0px;
+  }
+
+  #sfd-title {
+  font-size: 7vw;
+  }
+
+  #smvdu {
+    font-size: 3vw;
+  }
+
+  #on-date {
+    font-size: 3.5vw;
+  }
+
+  .btn-outline {
+    font-size: 3vw;
+  }
+
+  #about {
+    padding: 125px 75px;
+    font-size: 2.5vw;
+  }
+
+}
