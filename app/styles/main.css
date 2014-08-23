@@ -245,7 +245,7 @@ footer {
 }
 
 #follow a{
-  color: #474747;
+  color: #202020;
 }
 
 @media all and (min-height:250px)  { #location{max-height:10rem;}}
