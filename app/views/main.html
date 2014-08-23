@@ -4,19 +4,22 @@
   </div>
   <nav>
     <ul>
-      <li ng-click='scrollTo("home")'><a href="#home" du-scrollspy du-smooth-scroll>Home</a>
-      <li ng-click='scrollTo("about")'><a href="#about" du-scrollspy du-smooth-scroll>About</a>
-      <li ng-click='scrollTo("events")'><a href="#events" du-scrollspy du-smooth-scroll>Events</a>
-      <li ng-click='scrollTo("registration")'><a href="#registration" du-scrollspy du-smooth-scroll>Registration</a>
-      <li ng-click='scrollTo("reach-us")'><a href="#reach-us" du-scrollspy du-smooth-scroll>Reach Us</a>
+      <li><a href="#home" du-scrollspy du-smooth-scroll>Home</a>
+      <li><a href="#about" du-scrollspy du-smooth-scroll>About</a>
+      <li><a href="#events" du-scrollspy du-smooth-scroll>Events</a>
+      <li><a href="#registration" du-scrollspy du-smooth-scroll>Registration</a>
+      <li><a href="#reach-us" du-scrollspy du-smooth-scroll>Reach Us</a>
     </ul>
   </nav>
 </header>
 <section id="home">
   <p id='sfd-title'>Software Freedom Day<p>
-  <p id="smvdu">SMVDU</p>
-  <p id="on-date">20th September 2014</p>
-  <p><a class="btn btn-lg btn-outline" ng-href="#" ng-click='scrollTo("registration")'>Register</a></p>
+  <div>
+    <div><hr/></div>
+    <div id="smvdu"><i class="fa fa-calendar"></i> 20th September 2014,  <i class="fa fa-map-marker"></i> SMVDU</div>
+    <div><hr/></div>
+  </div>  
+  <p><a class="btn btn-lg btn-outline" href="#registration" du-scrollspy du-smooth-scroll>Register</a></p>
 </section>
 <section id="about">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -30,25 +33,10 @@
 <section id="reach-us">
     <div id="reach-left">
         <p>Chief Faculty Coordinator</p>
-        <div id="faculty">
-            <div class="profile">
-                <a href="">
-                  <img src="images/test.png" alt="Profile">
-                </a>
-            </div>
+        <div id="faculty">            
         </div>
         <p>Student Coordinators</p>
-        <div id="students">
-            <div class="profile">
-                <a href="">
-                  <img src="images/test.png" alt="Profile" class="img-responsive">
-                </a>
-            </div>
-            <div class="profile">
-                <a href="">
-                  <img src="images/test.png" alt="Profile" class="img-responsive">
-                </a>
-            </div>
+        <div id="students">            
         </div>
     </div>
 
@@ -60,14 +48,17 @@
     </div>
 </section>
 <footer>
-  <div id="nav-left">
-      <span>Website is developed using open source technology. All resources here.</span>
+  <div id="license">
+    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+      <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
+    </a>
   </div>
-  <div id="nav-git">
-      <a class="webicon github large" href="https://github.com/smvdu/sfd-smvdu">Github</a>
+  <div id="license-content">
+    <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">This SFD Website</span>
+    is licensed under a 
+    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution License</a>.
   </div>
-  <div id="nav-right">
-      Developed and Maintained By: <br/>
-      &bull;SFD SMVDU TEAM
+  <div id="follow">
+    <a href="https://github.com/smvdu/sfd-smvdu" target="_blank"><i class="fa fa-github fa-2x"></i></a>
   </div>
 </footer>
