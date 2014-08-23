@@ -127,8 +127,22 @@ a.active {
 #about, #registration, #events {
   background-color: #FEF9C4;
   color: #EE692A;
-  padding: 200px 100px;
+  display: flex;
+  align-items: center;
+  padding: 0px 8%;
   font-size: 2vw;
+}
+
+.big{
+  font-size: 3.5vw;
+  line-height: 1;
+}
+
+.bold {
+  font-weight: bold;
+  background-color: #FAE4AC;
+  padding: 0.1% 1%;
+  border-radius: 4px;
 }
 
 #reach-us
@@ -306,9 +320,16 @@ footer {
     font-size: 3vw;
   }
 
-  #about {
-    padding: 125px 75px;
+  #about, #registration, #events {
     font-size: 2.5vw;
+  }
+
+  .big {
+    font-size: 4.5vw;
+  }
+
+  .bold {
+    border-radius: 3px;
   }
 
 }
