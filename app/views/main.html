@@ -28,7 +28,27 @@
 </section>
 <section id="events">
   <article>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    <h1>Event Schedule</h1>
+    <ul>
+      <li ng-repeat="event in events track by $index" ng-class="checkListApart($index)">
+        <div class="date-time-place">
+          <div class="date" ng-show="summary[$index]"><i class="fa fa-calendar-o"></i> {{event.date}}</div>
+          <div class="time"><i class="fa fa-clock-o"></i> {{event.time}}</div>
+          <div class="place" ng-show="summary[$index]"><i class="fa fa-map-marker"></i> {{event.place}}</div>
+        </div>
+        <div class="event-info-wrapper">
+          <div class="event-title">
+            {{event.title}}
+            <i class="fa fa-chevron-down" ng-click="showSummary($index)" ng-show="!summary[$index]"></i>
+            <i class="fa fa-chevron-up" ng-click="hideSummary($index)" ng-show="summary[$index]"></i>
+          </div>
+          <div class="event-summary" ng-show="summary[$index]">
+            {{event.summary}}
+          </div>
+        </div>
+      </li>     
+    </ul>
+    <span>* This Schedule is tentative. Register yourself to remain updated.</span>
   </article>
 </section>
 <section id="registration">
