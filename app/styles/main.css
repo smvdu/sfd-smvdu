@@ -19,14 +19,6 @@ section {
 
 section article {
   width: 100%;
-  opacity: 0;
-  margin-top: 2%;
-}
-
-.fadeIn {
-  opacity: 1;
-  transition: 0.5s all ease-out;
-  margin-top: 0;
 }
 
 ul {
