@@ -17,7 +17,6 @@ angular.module('myDirectives')
 	        home = document.getElementById('home');
 	        header = document.getElementById('main-header');
 	        hHeight = home.offsetHeight;
-	        var sections = document.getElementsByTagName('section');
 	        var scrollTop;
 
 	        window.onscroll = function() {	
@@ -27,14 +26,6 @@ angular.module('myDirectives')
 	          } else {
 	            header.setAttribute('class', '');
 	          }
-	          for(var i = 0; i < sections.length; i++) {
-		        	if(sections[i].offsetTop === scrollTop) {
-		        		for(var j = 0; j < sections.length; j++) {
-		        			sections[j].children[0].className = '';
-		        		}
-		        		sections[i].children[0].className = 'fadeIn';
-		        	}
-	        	}
 	        };
 	        
       	}
