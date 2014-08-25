@@ -54,6 +54,7 @@ a.active {
   display: flex;  
   justify-content: space-between;
   align-items: center;
+  z-index: 1;
 }
 
 #main-header div {
@@ -152,9 +153,9 @@ a.active {
 
 #reach-us
 {
-  background-color: #FEF9C4;
+  background-color: #ECF0F1;
   color: #EE692A;
-  padding: 100px 50px 0px 50px;
+  padding: 60px 0px 0px 0px;
   font-size: 2vw;
 }
 
@@ -254,79 +255,6 @@ a.active {
   color: #414141;
 }
 
-#reach-us {
-  background-color: #34495E;
-  color: #ccc;
-}
-
-#reach-left
-{
-  font-size: 2vw;
-  float: left;
-}
-
-#reach-right
-{
-  font-size: 1.2vw;
-  position: absolute;
-  right: 20px;
-}
-
-#faculty
-{
-  width: 200px;
-  height: 180px;
-}
-
-#students
-{
-  width: 400px;
-  height: 180px;
-}
-
-
-#location
-{
-  width: 100%;
-  max-width: 70.5rem;
-  overflow: hidden;
-  padding-right: 50px;
-}
-
-#location iframe
-{
-  padding:1px;
-  border:1px solid #021a40;
-  background-color:#000;
-}
-
-.profile {
-  border: 3px solid #fff;
-  border-radius: 100px;
-  box-shadow: 2px 2px 5px rgba(0,0,0,.3);
-  float:left;
-  height: 150px;
-  margin: 15px;
-  overflow: hidden;
-  width: 150px;
-  transition: .5s;
-}
-
-.profile img {
-  height: 100%;
-  width: 100%;
-}
-
-.profile:hover {
-  box-shadow: 5px 5px 10px rgba(0,0,0,.5);
-  -ms-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  transform: scale(1.1);
-  transition: .5s;
-} 
-
 footer {
   color: #000;
   padding: 18px 40px;
@@ -353,22 +281,6 @@ footer {
   color: #202020;
 }
 
-@media all and (min-height:250px)  { #location{max-height:10rem;}}
-@media all and (min-height:350px)  { #location{max-height:15rem;}}
-@media all and (min-height:400px)  { #location{max-height:20rem;}}
-@media all and (min-height:500px)  { #location{max-height:30rem;}}
-@media all and (min-height:600px) { #location{max-height:50rem;}}
-
-
-@media all and (min-width:200px)  { #location{max-width:25rem;} 
-.profile{width:50px;height: 50px;}#faculty{height:80px }#students{height:80px } }
-@media all and (min-width:768px)  { #location{max-width:40rem;}
-.profile{width:100px;height: 100px;}#faculty{height:130px }#students{height:130px } }
-
-@media all and (min-width:1024px) { #location{max-width:65rem;}
-.profile{width:120px;height: 120px;} #faculty{height:150px }#students{height:150px }}
-@media all and (min-width:1366px) { #location{max-width:70.5rem;}
-.profile{width:150px;height: 150px;} #faculty{height:180px }#students{height:180px }}
 
 
 /*--------------- Media Queries ----------------------*/
@@ -482,4 +394,53 @@ footer {
 
 .event-title i.ng-hide-remove, .event-title i.ng-hide-add {
   transition: 0s all linear;
+}
+
+/*----------------------Reach Us Page--------------------*/
+.location {
+  background: rgba(255,255,255,0.8);
+  padding: 25px 25px;
+  z-index: 0;
+}
+
+.container {
+  z-index: 0;
+  position: relative;
+}
+
+.bar h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 100;
+  display: block;
+}
+
+.location ul {
+  list-style: none;
+  padding-left: 10px;
+}
+
+.location li {
+  margin: 20px 0px;
+  font-size: 1.5vw;
+}
+
+#reach
+{ 
+  z-index: 0;
+  position: relative;
+}
+
+.bar{
+  position:absolute;
+  top:100px;
+  margin-right: 50px;
+  margin-left: 20px;
+  font-size: 1.5vw;
+}
+
+@media (min-width: 992px){
+  .col-md-5 {
+    width: 25%;
+  }
 }
