@@ -17,7 +17,9 @@ var app = angular
     'ngSanitize',
     'ngTouch',
     'myDirectives',
-    'duScroll'
+    'duScroll',
+    'timer'
+    
   ]);
 
 app.config(function ($routeProvider) {
