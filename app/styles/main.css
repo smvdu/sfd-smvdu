@@ -57,7 +57,7 @@ a.active {
   width: 100%;
   padding: 60px;
   background-color: #EE692A;
-  display: flex;  
+  display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 1;
@@ -93,8 +93,8 @@ a.active {
   min-height: 100%;
 }
 
-#home > div {  
-  display: flex;  
+#home > div {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   width: 80%;
@@ -197,17 +197,17 @@ a.active {
 }
 
 #events li {
-  display: flex;  
+  display: flex;
   justify-content: space-between;
 }
 
 .list-apart{
-  
+
 }
 
 .date-time-place {
   width: 18%;
-  border-right: 4px solid #EE692A;  
+  border-right: 4px solid #EE692A;
   padding: 1% 0;
 }
 
@@ -235,7 +235,7 @@ a.active {
 .event-info-wrapper {
   flex-grow: 2;
   padding-left: 3%;
-  width: 80%;  
+  width: 80%;
 }
 
 .list-apart .event-info-wrapper {
@@ -282,8 +282,6 @@ a.active {
 }
 
 #registration input {
-  font-size: 1.5vw;
-  height: 50px;
 }
 
 footer {
@@ -338,7 +336,7 @@ footer {
 }
 
 #reach article
-{ 
+{
   z-index: 0;
   position: relative;
   height: 100%;
@@ -376,7 +374,7 @@ footer {
   }
 
   #home h3{
-    font-size: 2.5vw;    
+    font-size: 2.5vw;
   }
 
   #large-screen {
@@ -447,14 +445,14 @@ footer {
     padding: 10px 40px;
   }
 
-  section article {  
+  section article {
   }
 
   #main-header {
     display: block;
     text-align: center;
     padding: 10px;
-  } 
+  }
 
 
   #main-header div {
@@ -471,11 +469,11 @@ footer {
   }
 
   #main-header ul li {
-    margin: 0; 
+    margin: 0;
     width: 12%;
     font-size: 4vw;
   }
-  
+
   #home {
     padding: 120px 0px 60px 0px;
     min-height: 60%;
@@ -495,7 +493,7 @@ footer {
   }
 
   #home h3{
-    font-size: 3.5vw;    
+    font-size: 3.5vw;
   }
 
   #sfd-title {
@@ -593,19 +591,19 @@ footer {
   display: block !important;
 }
 
-.ng-hide-add,.ng-hide-remove, 
+.ng-hide-add,.ng-hide-remove,
 .ng-hide-add.ng-hide-add-active,
 .ng-hide-remove.ng-hide-remove-active {
-  transition:0.3s all ease-out;  
+  transition:0.3s all ease-out;
 }
 
-.ng-hide-add, 
+.ng-hide-add,
 .ng-hide-remove.ng-hide-remove-active {
   padding-left: 0px;
   opacity: 1;
 }
 
-.ng-hide-remove, 
+.ng-hide-remove,
 .ng-hide-add.ng-hide-add-active {
   opacity:0;
   padding-left: 10px;
@@ -615,3 +613,37 @@ footer {
   transition: 0s all linear;
 }
 
+
+/*----------------------Reach Us Page--------------------*/
+
+#contacts {
+  background-color: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  top: 15%;
+  margin-left: 5%;
+  padding: 2% 1%;
+  font-size: 1.5vw;
+  line-height: 2;
+}
+
+#contacts h2 {
+  text-align: center;
+  font-size: 3vw;
+}
+
+#contacts span {
+  text-align: center;
+}
+
+#reach article
+{
+  z-index: 0;
+  position: relative;
+  height: 100%;
+}
+
+#reach iframe {
+  height: 100%;
+  width: 100%;
+  border: none !important;
+}

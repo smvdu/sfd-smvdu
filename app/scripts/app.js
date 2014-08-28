@@ -18,8 +18,8 @@ var app = angular
     'ngTouch',
     'myDirectives',
     'duScroll',
-    'timer'
-    
+    'timer',
+    'firebase'
   ]);
 
 app.config(function ($routeProvider) {
@@ -36,3 +36,4 @@ app.config(function ($routeProvider) {
         redirectTo: '/'
       });
   });
+
