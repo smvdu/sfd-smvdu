@@ -4,6 +4,11 @@
   font-family: 'stratum';
 }
 
+@font-face {
+  src: url('../fonts/stratum-2-web-bold.woff');
+  font-family: 'stratum-bold';
+}
+
 * {
   transition: 0.3s all;
 }
@@ -84,6 +89,7 @@ a.active {
   background-color: #EE692A;
   color: #FEF9C4;
   padding: 175px 0px 100px 0px;
+  min-height: 100%;
 }
 
 #home > div {  
@@ -96,6 +102,11 @@ a.active {
 
 #home > div div {
   flex-grow: 1;
+}
+
+#home h4 {
+  font-family: "stratum-bold";
+  margin-top: 5%;
 }
 
 #sfd-title {
