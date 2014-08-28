@@ -28,6 +28,7 @@ section article {
 
 ul {
   list-style-type: none;
+  padding: 5px;
 }
 
 a{
@@ -104,9 +105,17 @@ a.active {
   flex-grow: 1;
 }
 
-#home h4 {
-  font-family: "stratum-bold";
+#home h3 {
   margin-top: 5%;
+  font-size: 2vw;
+}
+
+#large-screen {
+    display: block;
+}
+
+#small-screen {
+  display: none;
 }
 
 #sfd-title {
@@ -303,6 +312,43 @@ footer {
   color: #202020;
 }
 
+/*----------------------Reach Us Page--------------------*/
+
+#contacts {
+  background-color: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  top: 15%;
+  margin-left: 5%;
+  padding: 2% 1%;
+  font-size: 1.5vw;
+  line-height: 2;
+}
+
+#contacts h2 {
+  text-align: center;
+  font-size: 3vw;
+}
+
+#contacts span {
+  text-align: center;
+}
+
+#reach {
+  height: 80%;
+}
+
+#reach article
+{ 
+  z-index: 0;
+  position: relative;
+  height: 100%;
+}
+
+#reach iframe {
+  height: 100%;
+  width: 100%;
+  border: none !important;
+}
 
 
 /*--------------- Media Queries ----------------------*/
@@ -326,7 +372,19 @@ footer {
   }
 
   #home {
-    padding: 140px 0px 75px 0px;
+    padding: 125px 0px 75px 0px;
+  }
+
+  #home h3{
+    font-size: 2.5vw;    
+  }
+
+  #large-screen {
+    display: block;
+  }
+
+  #small-screen {
+    display: none;
   }
 
   #sfd-title {
@@ -374,7 +432,142 @@ footer {
   }
 
   #contacts {
+    font-size: 1.5vw;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  section {
+    min-height: 60%;
+  }
+
+  .shrink {
+    padding: 10px 40px;
+  }
+
+  section article {  
+  }
+
+  #main-header {
+    display: block;
+    text-align: center;
+    padding: 10px;
+  } 
+
+
+  #main-header div {
+    font-size: 5vw;
+  }
+
+  #main-header nav {
+    font-size: 2vw;
+  }
+
+  #main-header ul {
+    margin-top: 3%;
+    padding: 0;
+  }
+
+  #main-header ul li {
+    margin: 0; 
+    width: 12%;
+    font-size: 4vw;
+  }
+  
+  #home {
+    padding: 120px 0px 60px 0px;
+    min-height: 60%;
+  }
+
+  .btn-outline {
+    width: 40%;
+  }
+
+  #large-screen {
+    display: none;
+  }
+
+  #small-screen {
+    display: block;
+    text-align: center;
+  }
+
+  #home h3{
+    font-size: 3.5vw;    
+  }
+
+  #sfd-title {
+  font-size: 9vw;
+  }
+
+  #smvdu {
+    font-size: 4vw;
+  }
+
+  #on-date {
+    font-size: 4.5vw;
+  }
+
+  .btn-outline {
+    font-size: 4vw;
+  }
+
+  #about, #registration, #events {
+    font-size: 3.5vw;
+  }
+
+  .big {
+    font-size: 5.5vw;
+  }
+
+  .bold {
+    border-radius: 2px;
+  }
+
+  #events h1 {
+    font-size: 5vw;
+  }
+
+  #events ul {
+    font-size: 2vw;
+  }
+
+  .event-title {
     font-size: 2.5vw;
+  }
+
+  .event-title i {
+
+  }
+
+  #about, #registration, #schedule, #events {
+    padding-top: 25%;
+    padding-bottom: 10%;
+  }
+
+  #registration h1{
+    font-size: 6vw;
+  }
+
+  #registration input {
+    font-size: 3.5vw;
+    height: 30px;
+  }
+
+  #contacts {
+    font-size: 2vw;
+    top: 30%;
+    margin-left: 3%;
+  }
+
+  footer {
+    justify-content: space-between;
+  }
+
+  #license-content {
+    display: none;
   }
 
 }
@@ -422,36 +615,3 @@ footer {
   transition: 0s all linear;
 }
 
-/*----------------------Reach Us Page--------------------*/
-
-#contacts {
-  background-color: rgba(255, 255, 255, 0.6);
-  position: absolute;
-  top: 15%;
-  margin-left: 5%;
-  padding: 2% 1%;
-  font-size: 1.5vw;
-  line-height: 2;
-}
-
-#contacts h2 {
-  text-align: center;
-  font-size: 3vw;
-}
-
-#contacts span {
-  text-align: center;
-}
-
-#reach article
-{ 
-  z-index: 0;
-  position: relative;
-  height: 100%;
-}
-
-#reach iframe {
-  height: 100%;
-  width: 100%;
-  border: none !important;
-}

@@ -3,12 +3,19 @@
     SFD SMVDU
   </div>
   <nav>
-    <ul>
+    <ul id="large-screen">
       <li><a href="#home" du-scrollspy du-smooth-scroll>Home</a>
       <li><a href="#about" du-scrollspy du-smooth-scroll>About</a>
       <li><a href="#events" du-scrollspy du-smooth-scroll>Events</a>
       <li><a href="#registration" du-scrollspy du-smooth-scroll>Registration</a>
       <li><a href="#reach" du-scrollspy du-smooth-scroll>Reach Us</a>
+    </ul>
+    <ul id="small-screen">
+      <li><a href="#home" du-scrollspy du-smooth-scroll><i class="fa fa-home"></i></a>
+      <li><a href="#about" du-scrollspy du-smooth-scroll><i class="fa fa-font"></i></a>
+      <li><a href="#events" du-scrollspy du-smooth-scroll><i class="fa fa-ticket"></i></a>
+      <li><a href="#registration" du-scrollspy du-smooth-scroll><i class="fa fa-user"></i></a>
+      <li><a href="#reach" du-scrollspy du-smooth-scroll><i class="fa fa-map-marker"></i></a>
     </ul>
   </nav>
 </header>
@@ -22,13 +29,13 @@
   <p><a class="btn btn-lg btn-outline" href="#registration" du-scrollspy du-smooth-scroll>Register</a></p>
   <div class="container">
     <div class="row">
-      <div class="col-xs-12 col-md-8 col-md-offset-2"> <h4>Starts In <timer countdown="1987200" interval="1000">{{days}} days, {{hours}} hours, {{minutes}} minutes and {{seconds}} seconds</timer></h4></div>
+      <div class="col-xs-12 col-md-8 col-md-offset-2"> <h3>Starts In <timer countdown="1987200" interval="1000">{{days}} days, {{hours}} hours, {{minutes}} minutes and {{seconds}} seconds</timer></h3></div>
     </div>
   </div>
 </section>
 <section id="about">
     <article>
-      <span class="big">S</span>oftware <span class="big">F</span>reedom <span class="big">D</span>ay is dedicated to the awesome world of Open Source. It is a worldwide celebration of Open Source and Free Software. Being an alma mater of numerous Open Source Contributers and Supporters,  <span class="bold">SMVDU</span> is going to continue to be a part of <span class="bold">SFD 2014</span>, which falls on  <span class="bold">20th September</span> this year. In the spirit of Open Source Revolution we will be supporting and spreading the word about Open Source World by conducting a few workshops, competitions and talks during this Software Freedom Day. It's going to be a day full of knowledge, contribution and fun. We are eagerly waiting for you to be a part of Software Freedom Day at SMVDU.
+      <span class="big">S</span>oftware <span class="big">F</span>reedom <span class="big">D</span>ay is dedicated to the world of Open Source. It is a worldwide celebration of Open Source and Free Software. Being an alma mater of numerous Open Source Contributers and Supporters,  <span class="bold">SMVDU</span> is going to continue to be a part of <span class="bold">SFD 2014</span>, which falls on  <span class="bold">20th September</span> this year. In the spirit of Open Source Revolution we will be supporting and spreading the word about Open Source World by conducting a few workshops, competitions and talks during this Software Freedom Day. It's going to be a day full of knowledge, contribution and fun. We are eagerly waiting for you to be a part of Software Freedom Day at SMVDU.
     </article>
 </section>
 <section id="events">
@@ -118,7 +125,7 @@
 <footer>
   <div id="license">
     <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
-      <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
+      <img alt="Creative Commons License" style="border-width:0" src="images/cclicense.png" />
     </a>
   </div>
   <div id="license-content">
