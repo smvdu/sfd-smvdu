@@ -19,13 +19,13 @@
     </ul>
   </nav>
 </header>
-<section id="home">  
+<section id="home">
   <p id='sfd-title'>Software Freedom Day</p>
   <div>
     <div><hr/></div>
     <div id="smvdu"><i class="fa fa-calendar"></i> 20th September 2014,  <i class="fa fa-map-marker"></i> SMVDU</div>
     <div><hr/></div>
-  </div>  
+  </div>
   <p><a class="btn btn-lg btn-outline" href="#registration" du-scrollspy du-smooth-scroll>Register</a></p>
   <div class="container">
     <div class="row">
@@ -58,7 +58,7 @@
             {{event.summary}}
           </div>
         </div>
-      </li>     
+      </li>
     </ul>
     <span>* This Schedule is tentative. Register yourself to remain updated.</span>
   </article>
@@ -67,38 +67,44 @@
   <article id="loc">
     <div class="row text-center">
       <h1>Register Here</h1>
+      <span>Total no. of users registered : {{users.length}}</span>
     </div>
   </hr>
-  <div class="container">
-    <div class="row">
+  <div class="row">
+    <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
+      <form  name="registerForm" id="loc" role="form" ng-submit="registerForm.$valid && registerUser()" novalidate>
+        <div class="form-group" ng-class="{ 'has-error' : registerForm.name.$invalid && !registerForm.name.$pristine }">
+          <label for="name">Name</label>
+          <input type="text" name="name" ng-model="user.name" class="form-control" placeholder="Name" id="" required>
+          <p ng-show="registerForm.name.$invalid && !registerForm.name.$pristine" class="help-block">You name is required.</p>
+        </div>
 
-    <form class="col-md-6 col-md-offset-3" id="loc">
-    
-    
-      <div class="form-group">
-        <label for="">Name</label>
-          <input type="text" class="form-control input-sm" placeholder="Name" id="">
-      </div>
-      <div class="form-group">
-        <label for="">Email</label>
-          <input type="text" class="form-control input-sm" placeholder="Email" id="">
-      </div>
-      <div class="form-group">
-        <label for="">Password</label>
-          <input type="password" class="form-control input-sm" placeholder="Password" id="">
-      </div>
-     <div class="form-group">
-      <label for="">University/Organisation</label>
-          <input type="text" class="form-control input-sm" placeholder="University/Organization" id="">
-      </div>
-      <div class="form-group">
-        <label for="">Location</label>
-          <input type="text" class="form-control input-sm" placeholder="Location" id="">
-      </div>
-      <div class="form-group">
-          <button class="btn btn-primary btn-block btn-lg">Register Here</button>
-      </div>
-    </form>
+        <div class="form-group" ng-class="{ 'has-error' : registerForm.email.$invalid && !registerForm.email.$pristine }">
+          <label for="email">Email</label>
+          <input type="email" name="email" ng-model="user.email" class="form-control" placeholder="Email" id="" required>
+          <p ng-show="registerForm.email.$invalid && !registerForm.email.$pristine" class="help-block">Enter a valid email.</p>
+        </div>
+
+        <div class="form-group" ng-class="{ 'has-error' : registerForm.password.$invalid && !registerForm.password.$pristine }">
+          <label for="password">Password</label>
+          <input type="password" name="password" ng-model="user.password" ng-minlength="4" class="form-control" placeholder="Password" id="" required>
+          <p ng-show="registerForm.password.$error.minlength" class="help-block">Password is too short.</p>
+        </div>
+
+       <div class="form-group" ng-class="{ 'has-error' : registerForm.university.$invalid && !registerForm.university.$pristine }">
+          <label for="university">University/Organisation</label>
+          <input type="text" name="university" ng-model="user.university" class="form-control" placeholder="University/Organization" id="" required>
+          <p ng-show="registerForm.university.$invalid && !registerForm.university.$pristine" class="help-block">University/Organisation name is required.</p>
+        </div>
+        <div class="form-group" ng-class="{ 'has-error' : registerForm.location.$invalid && !registerForm.location.$pristine }">
+          <label for="location">Location</label>
+          <input type="text" name="location" ng-model="user.location" class="form-control" placeholder="Location" id="" required>
+          <p ng-show="registerForm.location.$invalid && !registerForm.location.$pristine" class="help-block">Location is required.</p>
+        </div>
+        <div class="form-group">
+          <button class="btn btn-primary btn-block btn-lg" ng-disabled="registerForm.$invalid">Register Here</button>
+        </div>
+      </form>
     </div>
   </div>
   </article>
@@ -125,12 +131,12 @@
 <footer>
   <div id="license">
     <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
-      <img alt="Creative Commons License" style="border-width:0" src="images/cclicense.png" />
+      <img alt="Creative Commons License" style="border-width:0" src="images/creativecommons-88x31.png" />
     </a>
   </div>
   <div id="license-content">
     <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">This SFD Website</span>
-    is licensed under a 
+    is licensed under a
     <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution License</a>.
   </div>
   <div id="follow">
