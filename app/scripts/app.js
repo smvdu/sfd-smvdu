@@ -8,16 +8,21 @@
  *
  * Main module of the application.
  */
-angular
+var app = angular
   .module('sfdSmvduApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
-  ])
-  .config(function ($routeProvider) {
+    'ngTouch',
+    'myDirectives',
+    'duScroll',
+    'timer',
+    'firebase'
+  ]);
+
+app.config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -31,3 +36,4 @@ angular
         redirectTo: '/'
       });
   });
+

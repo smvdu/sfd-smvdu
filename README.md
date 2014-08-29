@@ -6,7 +6,6 @@ Official repository for Software Freedom Day - SMVDU, to be held on 20th Septemb
 This README file contain all the information you need to start contributing to this repo. If you are still facing any difficulty with the code or setup then simply create an **Issue**. We'll be happy to help.
 
 ## Run Locally
---------------
 
 Use `git clone` to clone this repo to your local machine:
 ```
@@ -32,9 +31,13 @@ Run the Server using `grunt`:
 ```
 grunt serve
 ```
+**NOTE:** You should have grunt-cli installed globally to run the above command
+.If not installed run:
+```
+npm install -g grunt-cli
+```
 
 ## Contribution Guidelines
---------------------------
 
 Fork this repository to your account, using the **Fork** button on the top right corner.
 
