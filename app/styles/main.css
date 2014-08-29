@@ -4,6 +4,11 @@
   font-family: 'stratum';
 }
 
+@font-face {
+  src: url('../fonts/stratum-2-web-bold.woff');
+  font-family: 'stratum-bold';
+}
+
 * {
   transition: 0.3s all;
 }
@@ -23,6 +28,7 @@ section article {
 
 ul {
   list-style-type: none;
+  padding: 5px;
 }
 
 a{
@@ -51,7 +57,7 @@ a.active {
   width: 100%;
   padding: 60px;
   background-color: #EE692A;
-  display: flex;  
+  display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 1;
@@ -84,10 +90,11 @@ a.active {
   background-color: #EE692A;
   color: #FEF9C4;
   padding: 175px 0px 100px 0px;
+  min-height: 100%;
 }
 
-#home > div {  
-  display: flex;  
+#home > div {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   width: 80%;
@@ -96,6 +103,19 @@ a.active {
 
 #home > div div {
   flex-grow: 1;
+}
+
+#home h3 {
+  margin-top: 5%;
+  font-size: 2vw;
+}
+
+#large-screen {
+    display: block;
+}
+
+#small-screen {
+  display: none;
 }
 
 #sfd-title {
@@ -151,14 +171,6 @@ a.active {
   border-radius: 4px;
 }
 
-#reach-us
-{
-  background-color: #ECF0F1;
-  color: #EE692A;
-  padding: 60px 0px 0px 0px;
-  font-size: 2vw;
-}
-
 /*------------------Event page-----------------*/
 
 #events {
@@ -185,17 +197,17 @@ a.active {
 }
 
 #events li {
-  display: flex;  
+  display: flex;
   justify-content: space-between;
 }
 
 .list-apart{
-  
+
 }
 
 .date-time-place {
   width: 18%;
-  border-right: 4px solid #EE692A;  
+  border-right: 4px solid #EE692A;
   padding: 1% 0;
 }
 
@@ -223,7 +235,7 @@ a.active {
 .event-info-wrapper {
   flex-grow: 2;
   padding-left: 3%;
-  width: 80%;  
+  width: 80%;
 }
 
 .list-apart .event-info-wrapper {
@@ -253,7 +265,23 @@ a.active {
 #registration {
   background-color: #ECF0F1;
   color: #414141;
-  padding-top: 50px;
+  padding-top: 6%;
+  padding-bottom: 6%;
+}
+
+#registration .btn-outline {
+  color: #357ebd;
+  width: 100%;
+  border: 1px solid;
+  margin-top: 2%;
+}
+
+#registration .btn-outline:hover {
+  color: #fff;
+  background-color: #357ebd;
+}
+
+#registration input {
 }
 
 footer {
@@ -282,6 +310,43 @@ footer {
   color: #202020;
 }
 
+/*----------------------Reach Us Page--------------------*/
+
+#contacts {
+  background-color: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  top: 15%;
+  margin-left: 5%;
+  padding: 2% 1%;
+  font-size: 1.5vw;
+  line-height: 2;
+}
+
+#contacts h2 {
+  text-align: center;
+  font-size: 3vw;
+}
+
+#contacts span {
+  text-align: center;
+}
+
+#reach {
+  height: 80%;
+}
+
+#reach article
+{
+  z-index: 0;
+  position: relative;
+  height: 100%;
+}
+
+#reach iframe {
+  height: 100%;
+  width: 100%;
+  border: none !important;
+}
 
 
 /*--------------- Media Queries ----------------------*/
@@ -305,7 +370,19 @@ footer {
   }
 
   #home {
-    padding: 140px 0px 75px 0px;
+    padding: 125px 0px 75px 0px;
+  }
+
+  #home h3{
+    font-size: 2.5vw;
+  }
+
+  #large-screen {
+    display: block;
+  }
+
+  #small-screen {
+    display: none;
   }
 
   #sfd-title {
@@ -352,6 +429,145 @@ footer {
 
   }
 
+  #contacts {
+    font-size: 1.5vw;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  section {
+    min-height: 60%;
+  }
+
+  .shrink {
+    padding: 10px 40px;
+  }
+
+  section article {
+  }
+
+  #main-header {
+    display: block;
+    text-align: center;
+    padding: 10px;
+  }
+
+
+  #main-header div {
+    font-size: 5vw;
+  }
+
+  #main-header nav {
+    font-size: 2vw;
+  }
+
+  #main-header ul {
+    margin-top: 3%;
+    padding: 0;
+  }
+
+  #main-header ul li {
+    margin: 0;
+    width: 12%;
+    font-size: 4vw;
+  }
+
+  #home {
+    padding: 120px 0px 60px 0px;
+    min-height: 60%;
+  }
+
+  .btn-outline {
+    width: 40%;
+  }
+
+  #large-screen {
+    display: none;
+  }
+
+  #small-screen {
+    display: block;
+    text-align: center;
+  }
+
+  #home h3{
+    font-size: 3.5vw;
+  }
+
+  #sfd-title {
+  font-size: 9vw;
+  }
+
+  #smvdu {
+    font-size: 4vw;
+  }
+
+  #on-date {
+    font-size: 4.5vw;
+  }
+
+  .btn-outline {
+    font-size: 4vw;
+  }
+
+  #about, #registration, #events {
+    font-size: 3.5vw;
+  }
+
+  .big {
+    font-size: 5.5vw;
+  }
+
+  .bold {
+    border-radius: 2px;
+  }
+
+  #events h1 {
+    font-size: 5vw;
+  }
+
+  #events ul {
+    font-size: 2vw;
+  }
+
+  .event-title {
+    font-size: 2.5vw;
+  }
+
+  .event-title i {
+
+  }
+
+  #about, #registration, #schedule, #events {
+    padding-top: 25%;
+    padding-bottom: 10%;
+  }
+
+  #registration h1{
+    font-size: 6vw;
+  }
+
+  #registration input {
+    font-size: 3.5vw;
+    height: 30px;
+  }
+
+  #contacts {
+    font-size: 2vw;
+    top: 30%;
+    margin-left: 3%;
+  }
+
+  footer {
+    justify-content: space-between;
+  }
+
+  #license-content {
+    display: none;
+  }
+
 }
 
 /*------------------Angular Animations---------------*/
@@ -375,19 +591,19 @@ footer {
   display: block !important;
 }
 
-.ng-hide-add,.ng-hide-remove, 
+.ng-hide-add,.ng-hide-remove,
 .ng-hide-add.ng-hide-add-active,
 .ng-hide-remove.ng-hide-remove-active {
-  transition:0.3s all ease-out;  
+  transition:0.3s all ease-out;
 }
 
-.ng-hide-add, 
+.ng-hide-add,
 .ng-hide-remove.ng-hide-remove-active {
   padding-left: 0px;
   opacity: 1;
 }
 
-.ng-hide-remove, 
+.ng-hide-remove,
 .ng-hide-add.ng-hide-add-active {
   opacity:0;
   padding-left: 10px;
@@ -397,51 +613,37 @@ footer {
   transition: 0s all linear;
 }
 
+
 /*----------------------Reach Us Page--------------------*/
-.location {
-  background: rgba(255,255,255,0.8);
-  padding: 25px 25px;
-  z-index: 0;
+
+#contacts {
+  background-color: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  top: 15%;
+  margin-left: 5%;
+  padding: 2% 1%;
+  font-size: 1.5vw;
+  line-height: 2;
 }
 
-.container {
+#contacts h2 {
+  text-align: center;
+  font-size: 3vw;
+}
+
+#contacts span {
+  text-align: center;
+}
+
+#reach article
+{
   z-index: 0;
   position: relative;
+  height: 100%;
 }
 
-.bar h1 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-weight: 100;
-  display: block;
-}
-
-.location ul {
-  list-style: none;
-  padding-left: 10px;
-}
-
-.location li {
-  margin: 20px 0px;
-  font-size: 1.5vw;
-}
-
-#reach
-{ 
-  z-index: 0;
-  position: relative;
-}
-
-.bar{
-  position:absolute;
-  top:100px;
-  margin-right: 50px;
-  margin-left: 20px;
-  font-size: 1.5vw;
-}
-
-@media (min-width: 992px){
-  .col-md-5 {
-    width: 25%;
-  }
+#reach iframe {
+  height: 100%;
+  width: 100%;
+  border: none !important;
 }

@@ -9,8 +9,39 @@
  */
 
 angular.module('sfdSmvduApp')
-  .controller('MainCtrl', function ($scope) {
-   
+  .controller('MainCtrl', function ($scope, $firebase) {
+
+    /* Registration Form Js code starts here */
+    var ref = new Firebase("https://sfd-smvdu.firebaseio.com/");
+    // create an AngularFire reference to the data
+    var sync = $firebase(ref);
+
+    // fetch all data
+    $scope.users = sync.$asArray();
+
+    // user object
+    $scope.user = {
+      'name' : '',
+      'email' : '',
+      'university' :'',
+      'password' : '',
+      'location' : ''
+    };
+
+    // register user and push data to firebase
+    $scope.registerUser = function(){
+      trimData($scope.user);
+      sync.$push($scope.user);
+      alert("You registered successfully");
+    };
+
+    var trimData = function(data){
+      angular.forEach(data, function(value, key){
+        $scope.user.key = value.trim();
+      });
+    };
+    /* ends here*/
+
     $scope.summary = [];
 
     $scope.showSummary = function(index) {
@@ -37,7 +68,7 @@ angular.module('sfdSmvduApp')
         'date': date20,
         'place': place1,
         'title': 'Inaugural Ceremony',
-        'summary': 'Inaugural Ceremony for SFD 2014 at SMVDU.' + 
+        'summary': 'Inaugural Ceremony for SFD 2014 at SMVDU.' +
          ' Convener and Chief Guest will address the participating students.'
       },
       listApart,
@@ -64,7 +95,7 @@ angular.module('sfdSmvduApp')
         'title': 'Python Workshop',
         'summary': 'Basics of Python. Why Python is all the rage right now.'
       },
-      listApart, 
+      listApart,
       {
         'time': '15:45 - 17:00',
         'date': date20,
