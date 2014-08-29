@@ -20,26 +20,30 @@ angular.module('sfdSmvduApp')
     $scope.users = sync.$asArray();
 
     // user object
-    $scope.user = {
-      'name' : '',
-      'email' : '',
-      'university' :'',
-      'password' : '',
-      'location' : ''
+    var defaultUser = {
+      name : "",
+      email : "",
+      university : "",
+      password : "",
+      location : "",
     };
+    $scope.submitForm = false;
 
     // register user and push data to firebase
     $scope.registerUser = function(){
       trimData($scope.user);
       sync.$push($scope.user);
-      alert("You registered successfully");
+      $scope.submitForm = true;
+      $scope.registerForm.$setPristine();
+      $scope.user = defaultUser;
     };
 
     var trimData = function(data){
       angular.forEach(data, function(value, key){
-        $scope.user.key = value.trim();
+        $scope.user[key] = value.trim();
       });
     };
+
     /* ends here*/
 
     $scope.summary = [];
@@ -63,7 +67,7 @@ angular.module('sfdSmvduApp')
         'summary': ''
       };
 
-    $scope.events = [ 
+    $scope.events = [
       {
         'time': '17:30 - 19:00',
         'date': date19,
@@ -103,7 +107,7 @@ angular.module('sfdSmvduApp')
         'title': 'Github Workshop',
         'summary': 'Basics of Github and how you can add your projects and work on a github repository.'
       },
-     
+
 
       listApart,
       {
@@ -168,7 +172,7 @@ angular.module('sfdSmvduApp')
         'summary': 'Closing Ceremony for wrapping up such a big event SFD 2014 at SMVDU.'
       }
 
-      
+
 
 
     ];
