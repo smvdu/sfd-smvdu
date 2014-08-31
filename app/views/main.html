@@ -29,7 +29,7 @@
   <p><a class="btn btn-lg btn-outline" href="#registration" du-scrollspy du-smooth-scroll>Register</a></p>
   <div class="container">
     <div class="row">
-      <div class="col-xs-12 col-md-8 col-md-offset-2"> <h3>Starts In <timer countdown="1987200" interval="1000">{{days}} days, {{hours}} hours, {{minutes}} minutes and {{seconds}} seconds</timer></h3></div>
+      <div class="col-xs-12 col-md-8 col-md-offset-2"> <h3>Starts In <timer countdown="endTime" interval="1000">{{days}} days, {{hours}} hours, {{minutes}} minutes and {{seconds}} seconds</timer></h3></div>
     </div>
   </div>
 </section>
@@ -69,38 +69,55 @@
       <h1>Register Here</h1>
       <span>Total no. of users registered : {{users.length}}</span>
     </div>
+    <div class="alert alert-success alert-dismissible" role="alert" ng-show="form.submit">
+      <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+      <strong>Well done!</strong> You have successfully registered for SFD'14 SMVDU.
+    </div>
+    <div class="alert alert-danger alert-dismissible" role="alert" ng-show="form.userExist">
+      <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+      <strong>Sorry !</strong> This email-id is already registered.
+    </div>
   </hr>
   <div class="row">
     <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
-      <form  name="registerForm" id="loc" role="form" ng-submit="registerForm.$valid && registerUser()" novalidate>
+      <form  name="registerForm" id="loc" role="form" ng-submit="registerForm.$valid && registerUser(user)" autocomplete="off"  novalidate >
+
         <div class="form-group" ng-class="{ 'has-error' : registerForm.name.$invalid && !registerForm.name.$pristine }">
           <label for="name">Name</label>
-          <input type="text" name="name" ng-model="user.name" class="form-control" placeholder="Name" id="" required>
+          <input type="text" name="name" ng-model="user.name" class="form-control" placeholder="Name" id="" autocomplete="off" required>
           <p ng-show="registerForm.name.$invalid && !registerForm.name.$pristine" class="help-block">You name is required.</p>
         </div>
 
         <div class="form-group" ng-class="{ 'has-error' : registerForm.email.$invalid && !registerForm.email.$pristine }">
           <label for="email">Email</label>
-          <input type="email" name="email" ng-model="user.email" class="form-control" placeholder="Email" id="" required>
+          <input type="email" name="email" ng-model="user.email" class="form-control" placeholder="Email" id="" autocomplete="off"  required>
           <p ng-show="registerForm.email.$invalid && !registerForm.email.$pristine" class="help-block">Enter a valid email.</p>
         </div>
 
         <div class="form-group" ng-class="{ 'has-error' : registerForm.password.$invalid && !registerForm.password.$pristine }">
           <label for="password">Password</label>
-          <input type="password" name="password" ng-model="user.password" ng-minlength="4" class="form-control" placeholder="Password" id="" required>
+          <input type="password" name="password" ng-model="user.password" ng-minlength="4" class="form-control" placeholder="Password" id="" autocomplete="off" required>
           <p ng-show="registerForm.password.$error.minlength" class="help-block">Password is too short.</p>
         </div>
 
-       <div class="form-group" ng-class="{ 'has-error' : registerForm.university.$invalid && !registerForm.university.$pristine }">
+       <div class="form-group" ng-class="{ 'has-error' : (registerForm.university1.$invalid && !registerForm.university1.$pristine) || (registerForm.university2.$invalid && !registerForm.university2.$pristine) }">
           <label for="university">University/Organisation</label>
-          <input type="text" name="university" ng-model="user.university" class="form-control" placeholder="University/Organization" id="" required>
-          <p ng-show="registerForm.university.$invalid && !registerForm.university.$pristine" class="help-block">University/Organisation name is required.</p>
+          <select name="university1" class="form-control" ng-model="tmp.university1" required>
+            <option value="" selected>-- Choose University/Organization --</option>
+            <option ng-repeat="college in colleges" value="{{college.name+','+college.place}}" ng-bind="college.name+','+college.place"></option>
+            <option value="other">Other</option>
+          </select>
+          <input type="text" name="university2" ng-model="tmp.university2" class="form-control" placeholder="Enter Name of University/Organization" id="" autocomplete="off" ng-if="tmp.university1==='other'" required>
+          <p ng-show="registerForm.university1.$invalid && !registerForm.university1.$pristine" class="help-block">University/Organisation name is required.</p>
+          <p ng-show="registerForm.university2.$invalid && !registerForm.university2.$pristine" class="help-block">University/Organisation name is required.</p>
         </div>
+
         <div class="form-group" ng-class="{ 'has-error' : registerForm.location.$invalid && !registerForm.location.$pristine }">
           <label for="location">Location</label>
-          <input type="text" name="location" ng-model="user.location" class="form-control" placeholder="Location" id="" required>
+          <input type="text" name="location" ng-model="user.location" class="form-control" placeholder="Location" id="" autocomplete="off"  required>
           <p ng-show="registerForm.location.$invalid && !registerForm.location.$pristine" class="help-block">Location is required.</p>
         </div>
+
         <div class="form-group">
           <button class="btn btn-primary btn-block btn-lg" ng-disabled="registerForm.$invalid">Register Here</button>
         </div>
@@ -111,16 +128,16 @@
 </section>
 <section id="reach">
   <article>
-    <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=74.8227310180664%2C32.85392235373631%2C75.0857162475586%2C33.02708758002874&amp;layer=mapnik&amp;marker=32.94040329009112%2C74.9542236328125" style="border: 1px solid black"></iframe><br/><small><a href="http://www.openstreetmap.org/?mlat=32.9404&amp;mlon=74.9542#map=12/32.9405/74.9542&amp;layers=N">View Larger Map</a></small>
+    <iframe width="425" height="350" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=74.8227310180664%2C32.85392235373631%2C75.0857162475586%2C33.02708758002874&amp;layer=mapnik&amp;marker=32.94040329009112%2C74.9542236328125" style="border: 1px solid black"></iframe><br/><small><a href="http://www.openstreetmap.org/?mlat=32.9404&amp;mlon=74.9542#map=12/32.9405/74.9542&amp;layers=N">View Larger Map</a></small>
 
     <div id="contacts">
       <h2>Contacts</h2>
       <ul itemscope="" itemtype="http://schema.org/PostalAddress">
         <li itemprop="address"><i class="fa fa-map-marker highlight"></i>&#32;&#32;School of
         CSE ,SMVDU</li>
-        <li itemprop="email"><i class="fa fa-envelope highlight"></i>&#32;&#32;sfd.smvdu@gmail.com</li>        
-        <li itemprop="telephone"><i class="fa fa-phone highlight"></i>&#32;&#32;(+91) 8285543936 (Mr. Anuj Mahajan)</li> 
-        <li itemprop="telephone"><i class="fa fa-phone highlight"></i>&#32;&#32;(+91) 9469442968 (Rishabh)</li>             
+        <li itemprop="email"><i class="fa fa-envelope highlight"></i>&#32;&#32;sfd.smvdu@gmail.com</li>
+        <li itemprop="telephone"><i class="fa fa-phone highlight"></i>&#32;&#32;(+91) 8285543936 (Mr. Anuj Mahajan)</li>
+        <li itemprop="telephone"><i class="fa fa-phone highlight"></i>&#32;&#32;(+91) 9469442968 (Rishabh)</li>
         <li itemprop="telephone"><i class="fa fa-phone highlight"></i>&#32;&#32;(+91) 9797521857 (Parbhat)</li>
         <li itemprop="telephone"><i class="fa fa-phone highlight"></i>&#32;&#32;(+91) 8130528635</li>
         <li itemscope="" itemtype="http://schema.org/Event"><i class="fa fa-clock-o highlight"></i><time itemprop="startDate" datetime="2014-09-20T09:30">&#32;&#32;9:30</time> - <time itemprop="endDate" datetime="2014-09-20T18:00">18:00</time></li>

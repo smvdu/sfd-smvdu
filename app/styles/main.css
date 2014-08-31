@@ -201,6 +201,10 @@ a.active {
   justify-content: space-between;
 }
 
+.fa{
+  cursor: pointer;
+}
+
 .list-apart{
 
 }
