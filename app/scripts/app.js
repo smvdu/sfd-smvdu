@@ -199,7 +199,7 @@ app.factory('EventsFactory', function(){
       'most informative resource of internet - Wikipedia.'
     },listApart,
     {
-      'time': '13:30 - 13:20',
+      'time': '13:00 - 13:20',
       'date': date21,
       'place': place2,
        'title': 'Open Source-The Movie',
