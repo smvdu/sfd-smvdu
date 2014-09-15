@@ -9,7 +9,7 @@
  */
 
 angular.module('sfdSmvduApp')
-  .controller('MainCtrl', function ($scope, $firebase) {
+  .controller('MainCtrl', function ($scope, $firebase, EventsFactory, CollegesFactory) {
 
     /* Registration Form Js code starts here */
     var ref = new Firebase("https://sfd-smvdu.firebaseio.com/");
@@ -19,7 +19,7 @@ angular.module('sfdSmvduApp')
     // fetch all data
     $scope.users = sync.$asArray();
 
-    // user object
+    // default user details object
     var defaultUser = {
       name : "",
       email : "",
@@ -27,26 +27,60 @@ angular.module('sfdSmvduApp')
       password : "",
       location : "",
     };
-    $scope.submitForm = false;
+
+    // form status object
+    $scope.form ={
+      submit : false,
+      userExist : false
+    };
+
+    $scope.tmp = {
+      university1 : '',
+      university2 : ''
+    };
 
     // register user and push data to firebase
     $scope.registerUser = function(){
+      $scope.user.university = $scope.tmp.university1==='other'?$scope.tmp.university2 : $scope.tmp.university1;
       trimData($scope.user);
-      sync.$push($scope.user);
-      $scope.submitForm = true;
+      if(!isUserExists($scope.user)){
+        $scope.user.password = CryptoJS.MD5($scope.user.password).toString();
+        sync.$push($scope.user);
+        $scope.form.submit = true;
+      }else{
+        $scope.form.userExist = true;
+      }
+
       $scope.registerForm.$setPristine();
       $scope.user = defaultUser;
+      $scope.tmp.university1 = '';
+      $scope.tmp.university2 = '';
     };
 
+    // trim the data
     var trimData = function(data){
       angular.forEach(data, function(value, key){
         $scope.user[key] = value.trim();
       });
     };
 
+    // checks if user exists or not
+    var isUserExists = function(userData){
+      var found = false;
+      angular.forEach($scope.users, function(user){
+        if(angular.isObject(user) && user.email===userData.email){
+          console.log("Found email= "+ user.email);
+          found = true;
+        }
+      });
+      return found;
+    }
+
     /* ends here*/
 
     $scope.summary = [];
+    $scope.colleges = CollegesFactory.colleges;
+    $scope.events = EventsFactory.events;
 
     $scope.showSummary = function(index) {
       $scope.summary[index] = true;
@@ -55,132 +89,15 @@ angular.module('sfdSmvduApp')
     $scope.hideSummary = function(index) {
       $scope.summary[index] = false;
     };
-    var date19='19th September';
-    var date20 = '20th September';
-    var date21='21th September';
-    var place1 = 'Sanskriti Kaksh', place2 = 'Lecture Hall-D', place3 = 'Internet Lab';
-    var listApart = {
-        'time': '',
-        'date': '',
-        'place': '',
-        'title': '',
-        'summary': ''
-      };
-
-    $scope.events = [
-      {
-        'time': '17:30 - 19:00',
-        'date': date19,
-        'place': place3,
-        'title': 'Python Workshop',
-        'summary': 'Basics of Python. Why Python is all the rage right now.'
-      },listApart,
-      {
-        'time': '10:30 - 11:30',
-        'date': date20,
-        'place': place1,
-        'title': 'Inaugural Ceremony',
-        'summary': 'Inaugural Ceremony for SFD 2014 at SMVDU.' +
-         ' Convener and Chief Guest will address the participating students.'
-      },
-      listApart,
-      {
-        'time': '11:45 - 13:45',
-        'date': date20,
-        'place': place2,
-        'title': 'Linux Workshop',
-        'summary': 'Linux Workshop will cover the basics of linux installation and usage.'
-      },
-      listApart,
-      {
-        'time': '13:45 - 14:00',
-        'date': date20,
-        'place': '',
-        'title': 'Lunch',
-        'summary': ''
-      },
-      listApart,
-      {
-        'time': '14:00 - 15:30',
-        'date': date20,
-        'place': place2,
-        'title': 'Github Workshop',
-        'summary': 'Basics of Github and how you can add your projects and work on a github repository.'
-      },
-
-
-      listApart,
-      {
-        'time': '15:45 - 17:00',
-        'date': date20,
-        'place': place2,
-        'title': 'Network Security Workshop',
-        'summary': 'Learning the basics of networks and various security aspects.'
-      },listApart,
-      {
-        'time': '17:00 - 17:30',
-        'date': date20,
-        'place': place2,
-        'title': 'Quiz Competition',
-        'summary': 'This Competition is only to check the awareness about the open source among the student.'
-      }, listApart,
-      {
-        'time': '17:30 - 19:00',
-        'date': date20,
-        'place': place2,
-        'title': 'Open Source-The Movie',
-        'summary': 'A medium length movie to show the student '+
-        'open source community and how they work.'
-      },
-
-      listApart,
-      {
-        'time': '10:30 - 11:30',
-        'date': date21,
-        'place': place2,
-         'title': 'Wikipedia Workshop',
-        'summary': 'How to transform from just an user to a contributor of one of the ' +
-        'most informative resource of internet - Wikipedia.'
-      },listApart,
-      {
-        'time': '11:30 - 13:00',
-        'date': date21,
-        'place': place2,
-         'title': 'Giton Competition',
-        'summary': 'How to transform from just an user to a contributor of one of the ' +
-        'most informative resource of internet - Wikipedia.'
-      },listApart,
-      {
-        'time': '13:30 - 13:20',
-        'date': date21,
-        'place': place2,
-         'title': 'Open Source-The Movie',
-        'summary': 'A short movie on the various open sources resources available.'
-      } ,listApart,
-      {
-        'time': '14:00 - 16:00',
-        'date': date21,
-        'place': place2,
-         'title': 'Presentation Competition',
-        'summary': 'Make a small presentation on the given task'
-      },listApart,
-      {
-        'time': '16:00 - 17:30',
-        'date': date21,
-        'place': place1,
-         'title': 'Closing Ceremony',
-        'summary': 'Closing Ceremony for wrapping up such a big event SFD 2014 at SMVDU.'
-      }
-
-
-
-
-    ];
 
     $scope.checkListApart = function(index) {
       if( index%2 !== 0) {
         return 'list-apart';
       }
     };
+
+    var currDate = new Date();
+    var endDate = new Date(2014, 8, 20, 10, 30);
+    $scope.endTime = Math.abs(endDate.getTime() - currDate.getTime())/1000;
 
   });
