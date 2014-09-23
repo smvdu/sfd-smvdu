@@ -103,9 +103,12 @@ app.factory('EventsFactory', function(){
 
   var factory = {};
 
-  var date19='19th September';
-  var date20 = '20th September';
-  var date21='21th September';
+  var date23='23th September';
+  var date24 = '24th September';
+  var date25='25th September';
+  var date26='26th September';
+  var date27='27th September';
+  var date28='28th September';
   var place1 = 'Sanskriti Kaksh', place2 = 'Lecture Hall-D', place3 = 'Internet Lab';
   var listApart = {
       'time': '',
@@ -117,107 +120,155 @@ app.factory('EventsFactory', function(){
 
   factory.events = [
     {
-      'time': '17:30 - 19:00',
-      'date': date19,
+      'time': '18:00 - 19:30',
+      'date': date23,
       'place': place3,
       'title': 'Python Workshop',
-      'summary': 'Basics of Python. Why Python is all the rage right now.'
-    },listApart,
-    {
-      'time': '10:30 - 11:30',
-      'date': date20,
-      'place': place1,
-      'title': 'Inaugural Ceremony',
-      'summary': 'Inaugural Ceremony for SFD 2014 at SMVDU.' +
-       ' Convener and Chief Guest will address the participating students.'
+      'summary': 'Python, being one of the most widely used language' + 
+      ' with applications in almost every field of computer science is' +
+      ' a must for every computer engineer.' + 
+      ' Some of our senior students, who already possess good knowledge of' +
+      ' Python will be taking up the task of imparting the basic knowledge of Python among students.'
     },
     listApart,
     {
-      'time': '11:45 - 13:45',
-      'date': date20,
+      'time': '18:00 - 19:30',
+      'date': date24,
       'place': place2,
       'title': 'Linux Workshop',
-      'summary': 'Linux Workshop will cover the basics of linux installation and usage.'
+      'summary': 'Unix/Linux are generally seen as the root of Open' +
+      ' Source revolution. Hence, it is a mandatory knowledge for any' +
+      ' one who is going to work with computers. Open Source is at the' +
+      ' heart of Linux which allows so many programmers all around the' +
+      ' globe to make it better by contributing in it.' +
+      ' Linux is being used by people not only in computer' +
+      ' field but in every field of engineering and even for day to' +
+      ' day tasks by non-technical people as well.'
     },
     listApart,
     {
-      'time': '13:45 - 14:00',
-      'date': date20,
-      'place': '',
-      'title': 'Lunch',
-      'summary': ''
-    },
-    listApart,
-    {
-      'time': '14:00 - 15:30',
-      'date': date20,
+      'time': '18:00 - 19:30',
+      'date': date25,
       'place': place2,
       'title': 'Github Workshop',
-      'summary': 'Basics of Github and how you can add your projects and work on a github repository.'
+      'summary': 'In past 6 years Github has turned out to be the' +
+      ' most widely used platform for programmers and organizations' +
+      ' all around the globe to share and collaborate on open source' +
+      ' projects. Created by the father of Linux, Linus Trovalds himself,' +
+      ' Github makes the process of contributing to open source world as' +
+      ' simple and straight forward as possible. Like Linux it is also a' +
+      ' must to know knowledge for any programmer.'
     },
-
-
-    listApart,
+listApart,
     {
-      'time': '15:45 - 17:00',
-      'date': date20,
+      'time': '18:00 - 19:30',
+      'date': date26,
       'place': place2,
-      'title': 'Network Security Workshop',
-      'summary': 'Learning the basics of networks and various security aspects.'
+       'title': 'Wikipedia Workshop',
+      'summary': 'Wikipedia is the greatest source of “Open” data' +
+      ' on the internet. It has revolutionized the way we search for' +
+      ' and share the data over internet. But most of the times we are' +
+      ' only confined to be an user of such a platform. This workshop is' +
+      ' focused on the contributions that one can make on Wikipedia.'
     },listApart,
     {
-      'time': '17:00 - 17:30',
-      'date': date20,
+      'time': '11:00 - 13:00',
+      'date': date27,
       'place': place2,
-      'title': 'Quiz Competition',
-      'summary': 'This Competition is only to check the awareness about the open source among the student.'
-    }, listApart,
+      'title': 'Network Security Workshop',
+      'summary': 'Along with the highly connected world comes' +
+      ' the issue of data and network security as well. This' +
+      ' workshop will focus on showing the students how the power' +
+      ' of open source tools like Wireshark can be leveraged to' +
+      ' create threat-proof and reliable systems.'
+    },listApart,
     {
-      'time': '17:30 - 19:00',
-      'date': date20,
+      'time': '14:00 - 15:30',
+      'date': date27,
+      'place': place2,
+      'title': 'Arduino Workshop',
+      'summary': 'Arduino is an open source microcontroller intended '+ 
+                  ' to make applications of interactive objects.'+
+                  ' It is a major component of robotics and intelligent' +
+                  ' electronic and mechanical devices. Since Arduino is' +
+                  ' an open source platform licensed under creative common' +
+                  ' license, it can be used to extend it’s basic functionality' +
+                  ' by coding new operations.' +
+                  ' This workshop is more of a generic nature'+ 
+                  ' intended towards all the engineering students as a whole.'
+    },listApart,
+    {
+      'time': '15:30 - 17:00',
+      'date': date27,
+      'place': place2,
+      'title': 'Android Workshop',
+      'summary':'Android has revolutionized the mobile computing '+ 
+                ' by leveraging the power of open source, considering that '+
+                ' Android is itself based on Linux.'+ 
+                ' This workshop will give an insight to students about'+ 
+                ' basics of android development'
+    },listApart,
+    {
+      'time': '17:00 - 18:00',
+      'date': date27,
       'place': place2,
       'title': 'Open Source-The Movie',
-      'summary': 'A medium length movie to show the student '+
-      'open source community and how they work.'
+      'summary': 'A medium length movie to based on the philoshophy of open data.'
     },
-
     listApart,
     {
       'time': '10:30 - 11:30',
-      'date': date21,
+      'date': date28,
       'place': place2,
-       'title': 'Wikipedia Workshop',
-      'summary': 'How to transform from just an user to a contributor of one of the ' +
-      'most informative resource of internet - Wikipedia.'
-    },listApart,
+      'title': 'Quiz Competition',
+      'summary': 'This will be an online quiz competition to' +
+      ' test the knowledge of participants about open source.' +
+      ' Multiple choice questions will be served to participants' +
+      ' and the one submitting first and the highest number of correct' +
+      ' solutions will be crowned as winner. We’ll have Junior and Senior' +
+      ' Sections, considering the fact that Junior students might not be' +
+      ' as familiar with open source as Senior students are.' +
+      ' This quiz competition will be generic in nature covering' +
+      ' all the fields of engineering where open source is used.'
+    },
+    listApart,
     {
       'time': '11:30 - 13:00',
-      'date': date21,
+      'date': date28,
       'place': place2,
        'title': 'Giton Competition',
-      'summary': 'How to transform from just an user to a contributor of one of the ' +
-      'most informative resource of internet - Wikipedia.'
+      'summary': 'This competition will check the knowledge of participants' +
+      ' about Python and Github. It will be based on the Python and Github' +
+      ' Workshops. Each group will be given similar task of creating a python' +
+      ' script and then push it on Github and do some Github based operations' +
+      ' on it. Team with correct python code, and which takes least time to' +
+      ' complete all the Github tasks will be the winner.'+
+      ' There will be a maximum of 2 members in a team.'
     },listApart,
     {
       'time': '13:00 - 13:20',
-      'date': date21,
+      'date': date28,
       'place': place2,
        'title': 'Open Source-The Movie',
       'summary': 'A short movie on the various open sources resources available.'
     } ,listApart,
     {
       'time': '14:00 - 16:00',
-      'date': date21,
+      'date': date28,
       'place': place2,
        'title': 'Presentation Competition',
-      'summary': 'Make a small presentation on the given task'
+      'summary': 'Participating students will give a presentation in a group of '+
+                 'two on any topic based on Open Source. It can be about any '+ 
+                 'platform, organization and technology. Participants will be'+
+                  'evaluated based on their presentation skills, authenticate '+ 
+                  'information, understanding of open source, etc'
     },listApart,
     {
       'time': '16:00 - 17:30',
-      'date': date21,
+      'date': date28,
       'place': place1,
        'title': 'Closing Ceremony',
-      'summary': 'Closing Ceremony for wrapping up such a big event SFD 2014 at SMVDU.'
+      'summary': 'Closing Ceremony and Prize distribution of SFD SMVDU 2014.'
     }
   ];
 

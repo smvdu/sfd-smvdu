@@ -97,7 +97,7 @@ angular.module('sfdSmvduApp')
     };
 
     var currDate = new Date();
-    var endDate = new Date(2014, 8, 20, 10, 30);
+    var endDate = new Date(2014, 8, 20, 0, 0);
     $scope.endTime = Math.abs(endDate.getTime() - currDate.getTime())/1000;
 
   });
