@@ -109,7 +109,7 @@ app.factory('EventsFactory', function(){
   var date26='26th September';
   var date27='27th September';
   var date28='28th September';
-  var place1 = 'Sanskriti Kaksh', place2 = 'Lecture Hall-D', place3 = 'Internet Lab';
+  var place1 = 'Sanskriti Kaksh', place2 = 'Lecture Hall-A', place3 = 'Internet Lab';
   var listApart = {
       'time': '',
       'date': '',
@@ -122,8 +122,9 @@ app.factory('EventsFactory', function(){
     {
       'time': '18:00 - 19:30',
       'date': date23,
-      'place': place3,
+      'place': place2,
       'title': 'Python Workshop',
+      'organizer': 'Parbhat Puri, CSE 3rd Year',
       'summary': 'Python, being one of the most widely used language' + 
       ' with applications in almost every field of computer science is' +
       ' a must for every computer engineer.' + 
@@ -136,6 +137,7 @@ app.factory('EventsFactory', function(){
       'date': date24,
       'place': place2,
       'title': 'Linux Workshop',
+      'organizer': 'Ishit, CSE 3rd Year',
       'summary': 'Unix/Linux are generally seen as the root of Open' +
       ' Source revolution. Hence, it is a mandatory knowledge for any' +
       ' one who is going to work with computers. Open Source is at the' +
@@ -151,6 +153,7 @@ app.factory('EventsFactory', function(){
       'date': date25,
       'place': place2,
       'title': 'Github Workshop',
+      'organizer': 'Rishabh, CSE 4th Year',
       'summary': 'In past 6 years Github has turned out to be the' +
       ' most widely used platform for programmers and organizations' +
       ' all around the globe to share and collaborate on open source' +
@@ -164,7 +167,8 @@ listApart,
       'time': '18:00 - 19:30',
       'date': date26,
       'place': place2,
-       'title': 'Wikipedia Workshop',
+      'title': 'Wikipedia Workshop',
+      'organizer': 'CSE 3rd Year Students',
       'summary': 'Wikipedia is the greatest source of “Open” data' +
       ' on the internet. It has revolutionized the way we search for' +
       ' and share the data over internet. But most of the times we are' +
@@ -176,6 +180,7 @@ listApart,
       'date': date27,
       'place': place2,
       'title': 'Network Security Workshop',
+      'organizer': 'Ravi Prakash Giri, CSE 4th Year',
       'summary': 'Along with the highly connected world comes' +
       ' the issue of data and network security as well. This' +
       ' workshop will focus on showing the students how the power' +
@@ -187,6 +192,7 @@ listApart,
       'date': date27,
       'place': place2,
       'title': 'Arduino Workshop',
+      'organizer': '',
       'summary': 'Arduino is an open source microcontroller intended '+ 
                   ' to make applications of interactive objects.'+
                   ' It is a major component of robotics and intelligent' +
@@ -202,6 +208,7 @@ listApart,
       'date': date27,
       'place': place2,
       'title': 'Android Workshop',
+      'organizer': 'Shubham Tiwari, CSE 4th Year',
       'summary':'Android has revolutionized the mobile computing '+ 
                 ' by leveraging the power of open source, considering that '+
                 ' Android is itself based on Linux.'+ 
@@ -213,14 +220,16 @@ listApart,
       'date': date27,
       'place': place2,
       'title': 'Open Source-The Movie',
+      'organizer': '',
       'summary': 'A medium length movie to based on the philoshophy of open data.'
     },
     listApart,
     {
       'time': '10:30 - 11:30',
       'date': date28,
-      'place': place2,
+      'place': place3,
       'title': 'Quiz Competition',
+      'organizer': '',
       'summary': 'This will be an online quiz competition to' +
       ' test the knowledge of participants about open source.' +
       ' Multiple choice questions will be served to participants' +
@@ -235,8 +244,9 @@ listApart,
     {
       'time': '11:30 - 13:00',
       'date': date28,
-      'place': place2,
-       'title': 'Giton Competition',
+      'place': place3,
+      'title': 'Giton Competition',
+      'organizer': '',
       'summary': 'This competition will check the knowledge of participants' +
       ' about Python and Github. It will be based on the Python and Github' +
       ' Workshops. Each group will be given similar task of creating a python' +
@@ -250,13 +260,15 @@ listApart,
       'date': date28,
       'place': place2,
        'title': 'Open Source-The Movie',
+       'organizer': '',
       'summary': 'A short movie on the various open sources resources available.'
     } ,listApart,
     {
       'time': '14:00 - 16:00',
       'date': date28,
-      'place': place2,
+      'place': place1,
        'title': 'Presentation Competition',
+       'organizer': '',
       'summary': 'Participating students will give a presentation in a group of '+
                  'two on any topic based on Open Source. It can be about any '+ 
                  'platform, organization and technology. Participants will be'+
@@ -268,6 +280,7 @@ listApart,
       'date': date28,
       'place': place1,
        'title': 'Closing Ceremony',
+       'organizer': '',
       'summary': 'Closing Ceremony and Prize distribution of SFD SMVDU 2014.'
     }
   ];
