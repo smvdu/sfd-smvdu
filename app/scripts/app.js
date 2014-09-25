@@ -168,7 +168,7 @@ listApart,
       'date': date26,
       'place': place2,
       'title': 'Wikipedia Workshop',
-      'organizer': 'CSE 3rd Year Students',
+      'organizer': 'Atul, CSE 3rd Year',
       'summary': 'Wikipedia is the greatest source of “Open” data' +
       ' on the internet. It has revolutionized the way we search for' +
       ' and share the data over internet. But most of the times we are' +
@@ -187,7 +187,7 @@ listApart,
       ' of open source tools like Wireshark can be leveraged to' +
       ' create threat-proof and reliable systems.'
     },listApart,
-    {
+    /*{
       'time': '14:00 - 15:30',
       'date': date27,
       'place': place2,
@@ -202,9 +202,9 @@ listApart,
                   ' by coding new operations.' +
                   ' This workshop is more of a generic nature'+ 
                   ' intended towards all the engineering students as a whole.'
-    },listApart,
+    },listApart,*/
     {
-      'time': '15:30 - 17:00',
+      'time': '14:00 - 15:30',
       'date': date27,
       'place': place2,
       'title': 'Android Workshop',
@@ -216,7 +216,7 @@ listApart,
                 ' basics of android development'
     },listApart,
     {
-      'time': '17:00 - 18:00',
+      'time': '15:30 - 17:00',
       'date': date27,
       'place': place2,
       'title': 'Open Source-The Movie',
@@ -238,7 +238,9 @@ listApart,
       ' Sections, considering the fact that Junior students might not be' +
       ' as familiar with open source as Senior students are.' +
       ' This quiz competition will be generic in nature covering' +
-      ' all the fields of engineering where open source is used.'
+      ' all the fields of engineering where open source is used.' +
+      ' Maximum Team Members allowed: 2, Time Limit: 30 Minutes' +
+      ' No. of Questions: 15 - 20.'
     },
     listApart,
     {
@@ -253,16 +255,17 @@ listApart,
       ' script and then push it on Github and do some Github based operations' +
       ' on it. Team with correct python code, and which takes least time to' +
       ' complete all the Github tasks will be the winner.'+
-      ' There will be a maximum of 2 members in a team.'
+      ' There will be a maximum of 2 members in a team.' +
+      ' Maximum Team Members Allowed: 2, Time Limit: 90 Minutes.'
     },listApart,
-    {
+    /*{
       'time': '13:00 - 13:20',
       'date': date28,
       'place': place2,
        'title': 'Open Source-The Movie',
        'organizer': '',
       'summary': 'A short movie on the various open sources resources available.'
-    } ,listApart,
+    } ,listApart,*/
     {
       'time': '14:00 - 16:00',
       'date': date28,
@@ -271,9 +274,10 @@ listApart,
        'organizer': '',
       'summary': 'Participating students will give a presentation in a group of '+
                  'two on any topic based on Open Source. It can be about any '+ 
-                 'platform, organization and technology. Participants will be'+
+                 'platform, organization and technology. Participants will be '+
                   'evaluated based on their presentation skills, authenticate '+ 
-                  'information, understanding of open source, etc'
+                  'information, understanding of open source, etc.' +
+                  ' Maximum Team Members Allowed: 2, Time Limit: 10 - 12 Minutes.'
     },listApart,
     {
       'time': '16:00 - 17:30',
