@@ -103,12 +103,14 @@ app.factory('EventsFactory', function(){
 
   var factory = {};
 
-  var date23='23th September';
-  var date24 = '24th September';
+  var date19='19th September';
+  var date20= '20th September';
+  var date21='21st September';
+  var date22='22nd September';
+  var date23='23rd September';
+  var date24='24th September';
   var date25='25th September';
-  var date26='26th September';
-  var date27='27th September';
-  var date28='28th September';
+  var date26='26th September';    
   var place1 = 'Sanskriti Kaksh', place2 = 'Lecture Hall-A', place3 = 'Internet Lab';
   var listApart = {
       'time': '',
@@ -120,24 +122,11 @@ app.factory('EventsFactory', function(){
 
   factory.events = [
     {
-      'time': '18:00 - 19:30',
-      'date': date23,
-      'place': place2,
-      'title': 'Python Workshop',
-      'organizer': 'Parbhat Puri, CSE 3rd Year',
-      'summary': 'Python, being one of the most widely used language' + 
-      ' with applications in almost every field of computer science is' +
-      ' a must for every computer engineer.' + 
-      ' Some of our senior students, who already possess good knowledge of' +
-      ' Python will be taking up the task of imparting the basic knowledge of Python among students.'
-    },
-    listApart,
-    {
-      'time': '18:00 - 19:30',
-      'date': date24,
+      'time': '11:45 - 13:45',
+      'date': date19,
       'place': place2,
       'title': 'Linux Workshop',
-      'organizer': 'Ishit, CSE 3rd Year',
+      'organizer': '',
       'summary': 'Unix/Linux are generally seen as the root of Open' +
       ' Source revolution. Hence, it is a mandatory knowledge for any' +
       ' one who is going to work with computers. Open Source is at the' +
@@ -149,12 +138,12 @@ app.factory('EventsFactory', function(){
     },
     listApart,
     {
-      'time': '18:00 - 19:30',
-      'date': date25,
+      'time': '15:00 - 16:30',
+      'date': date19,
       'place': place2,
       'title': 'Github Workshop',
-      'organizer': 'Rishabh, CSE 4th Year',
-      'summary': 'In past 6 years Github has turned out to be the' +
+      'organizer': 'Parbhat Puri, CSE 4th Year',
+      'summary':'In past 6 years Github has turned out to be the' +
       ' most widely used platform for programmers and organizations' +
       ' all around the globe to share and collaborate on open source' +
       ' projects. Created by the father of Linux, Linus Trovalds himself,' +
@@ -162,36 +151,70 @@ app.factory('EventsFactory', function(){
       ' simple and straight forward as possible. Like Linux it is also a' +
       ' must to know knowledge for any programmer.'
     },
+    listApart,
+    {
+      'time': '10:30 - 12:00',
+      'date': date20,
+      'place': place2,
+      'title': 'Python Workshop',
+      'organizer': '',
+      'summary': 'Python, being one of the most widely used language' + 
+      ' with applications in almost every field of computer science is' +
+      ' a must for every computer engineer.' + 
+      ' Some of our senior students, who already possess good knowledge of' +
+      ' Python will be taking up the task of imparting the basic knowledge of Python among students.'
+    },
 listApart,
     {
-      'time': '18:00 - 19:30',
-      'date': date26,
-      'place': place2,
-      'title': 'Wikipedia Workshop',
-      'organizer': 'Atul, CSE 3rd Year',
-      'summary': 'Wikipedia is the greatest source of “Open” data' +
-      ' on the internet. It has revolutionized the way we search for' +
-      ' and share the data over internet. But most of the times we are' +
-      ' only confined to be an user of such a platform. This workshop is' +
-      ' focused on the contributions that one can make on Wikipedia.'
+      'time': '15:00 - 16:30',
+      'date': date20,
+      'place': place1,
+      'title': 'Guest Lecture',
+      'organizer': '',
+      'summary': ''
     },listApart,
     {
-      'time': '11:00 - 13:00',
-      'date': date27,
+      'time': '17:45 - 19:30',
+      'date': date21,
       'place': place2,
+      'title': 'Android Workshop',
+      'organizer': '',
+      'summary': 'Android has revolutionized the mobile computing '+ 
+                ' by leveraging the power of open source, considering that '+
+                ' Android is itself based on Linux.'+ 
+                ' This workshop will give an insight to students about'+ 
+                ' basics of android development'
+    },listApart,
+    {
+      'time': '17:45 - 19:30',
+      'date': date22,
+      'place': place3,
       'title': 'Network Security Workshop',
-      'organizer': 'Ravi Prakash Giri, CSE 4th Year',
-      'summary': 'Along with the highly connected world comes' +
+      'organizer': '',
+      'summary':  'Along with the highly connected world comes' +
       ' the issue of data and network security as well. This' +
       ' workshop will focus on showing the students how the power' +
       ' of open source tools like Wireshark can be leveraged to' +
       ' create threat-proof and reliable systems.'
     },listApart,
-    /*{
+    {
       'time': '14:00 - 15:30',
-      'date': date27,
+      'date': date23,
       'place': place2,
-      'title': 'Arduino Workshop',
+      'title': 'Web Technologies',
+      'organizer': 'Mohit kumar Bajoria, CSE 2nd Year',
+      'summary': 'This workshop covers the basic technologies like HTML and CSS' +
+                 'which are behind every web page on Internet.' + 
+                 'HTML stands for Hyper Text Markup Language' + 
+                 'which is the most widely used language on Web to' + 
+                 'develop web pages. CSS is used to control the style' + 
+                 'of a web document in a simple and easy way. CSS is the acronym for "Cascading Style Sheet.' 
+    },listApart,
+    {
+      'time': '17:45 - 19:30',
+      'date': date24,
+      'place': place2,
+      'title': 'Arduino Workshop ',
       'organizer': '',
       'summary': 'Arduino is an open source microcontroller intended '+ 
                   ' to make applications of interactive objects.'+
@@ -202,22 +225,10 @@ listApart,
                   ' by coding new operations.' +
                   ' This workshop is more of a generic nature'+ 
                   ' intended towards all the engineering students as a whole.'
-    },listApart,*/
-    {
-      'time': '14:00 - 15:30',
-      'date': date27,
-      'place': place2,
-      'title': 'Android Workshop',
-      'organizer': 'Shubham Tiwari, CSE 4th Year',
-      'summary':'Android has revolutionized the mobile computing '+ 
-                ' by leveraging the power of open source, considering that '+
-                ' Android is itself based on Linux.'+ 
-                ' This workshop will give an insight to students about'+ 
-                ' basics of android development'
     },listApart,
     {
-      'time': '15:30 - 17:00',
-      'date': date27,
+      'time': '17:45 - 19:30',
+      'date': date25,
       'place': place2,
       'title': 'Open Source-The Movie',
       'organizer': '',
@@ -225,8 +236,8 @@ listApart,
     },
     listApart,
     {
-      'time': '10:30 - 11:30',
-      'date': date28,
+      'time': '10:30 - 10:50',
+      'date': date26,
       'place': place3,
       'title': 'Quiz Competition',
       'organizer': '',
@@ -239,17 +250,31 @@ listApart,
       ' as familiar with open source as Senior students are.' +
       ' This quiz competition will be generic in nature covering' +
       ' all the fields of engineering where open source is used.' +
-      ' Maximum Team Members allowed: 2, Time Limit: 30 Minutes' +
+      ' Maximum Team Members allowed: 2, Time Limit: 20 Minutes' +
       ' No. of Questions: 15 - 20.'
     },
     listApart,
     {
-      'time': '11:30 - 13:00',
-      'date': date28,
+      'time': '11:00 - 11:30',
+      'date': date26,
       'place': place3,
-      'title': 'Giton Competition',
+      'title': 'Web maker Competition',
       'organizer': '',
-      'summary': 'This competition will check the knowledge of participants' +
+      'summary': 'This competition is very beginner friendly which is based on HTML and CSS' +
+      '  The students are asked to create a basic web page with HTML and style it with CSS' +
+      ' The web page which includes all the HTML elements ' +
+      ' as asked and beautifully styled will be the winner.' +
+      ' The first three students who complete the task will be winners' +
+      ' The task will be based on the web technologies workshop.' +
+      ' Time Limit: 30 Minutes.'
+    } ,listApart,
+    {
+      'time': '11:30 - 13:00',
+      'date': date26,
+      'place': place3,
+       'title': 'Git Py',
+       'organizer': '',
+      'summary':'This competition will check the knowledge of participants' +
       ' about Python and Github. It will be based on the Python and Github' +
       ' Workshops. Each group will be given similar task of creating a python' +
       ' script and then push it on Github and do some Github based operations' +
@@ -258,17 +283,17 @@ listApart,
       ' There will be a maximum of 2 members in a team.' +
       ' Maximum Team Members Allowed: 2, Time Limit: 90 Minutes.'
     },listApart,
-    /*{
+    {
       'time': '13:00 - 13:20',
-      'date': date28,
+      'date': date26,
       'place': place2,
        'title': 'Open Source-The Movie',
        'organizer': '',
-      'summary': 'A short movie on the various open sources resources available.'
-    } ,listApart,*/
+      'summary': 'A Short movie on the various open sources resources available.'
+    },listApart,
     {
       'time': '14:00 - 16:00',
-      'date': date28,
+      'date': date26,
       'place': place1,
        'title': 'Presentation Competition',
        'organizer': '',
@@ -281,7 +306,7 @@ listApart,
     },listApart,
     {
       'time': '16:00 - 17:30',
-      'date': date28,
+      'date': date26,
       'place': place1,
        'title': 'Closing Ceremony',
        'organizer': '',
