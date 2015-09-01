@@ -102,15 +102,13 @@ app.factory('CollegesFactory', function(){
 app.factory('EventsFactory', function(){
 
   var factory = {};
-
-  var date19='19th September';
-  var date20= '20th September';
   var date21='21st September';
   var date22='22nd September';
   var date23='23rd September';
   var date24='24th September';
   var date25='25th September';
-  var date26='26th September';    
+  var date26='26th September';
+  var date27='27th September';    
   var place1 = 'Sanskriti Kaksh', place2 = 'Lecture Hall-A', place3 = 'Internet Lab';
   var listApart = {
       'time': '',
@@ -121,12 +119,21 @@ app.factory('EventsFactory', function(){
     };
 
   factory.events = [
+      {
+      'time':'17:45 - 19:30',
+      'date': date21,
+      'place': place1,
+      'title': 'Inaugural Ceremony',
+      'organizer': 'Atul Mishra',
+      'summary': 'What is FOSS ?'
+    },
+    listApart,
     {
-      'time': '11:45 - 13:45',
-      'date': date19,
+      'time': '17:45 - 19:30',
+      'date': date22,
       'place': place2,
       'title': 'Linux Workshop',
-      'organizer': '',
+      'organizer': 'Anmol Sharma, Afshan Massarat',
       'summary': 'Unix/Linux are generally seen as the root of Open' +
       ' Source revolution. Hence, it is a mandatory knowledge for any' +
       ' one who is going to work with computers. Open Source is at the' +
@@ -138,11 +145,11 @@ app.factory('EventsFactory', function(){
     },
     listApart,
     {
-      'time': '15:00 - 16:30',
-      'date': date19,
+      'time': '17:45 - 19:30',
+      'date': date23,
       'place': place2,
       'title': 'Github Workshop',
-      'organizer': 'Parbhat Puri, CSE 4th Year',
+      'organizer': 'Parbhat Puri, Abhishek kumar Tiwari',
       'summary':'In past 6 years Github has turned out to be the' +
       ' most widely used platform for programmers and organizations' +
       ' all around the globe to share and collaborate on open source' +
@@ -151,95 +158,74 @@ app.factory('EventsFactory', function(){
       ' simple and straight forward as possible. Like Linux it is also a' +
       ' must to know knowledge for any programmer.'
     },
-    listApart,
-    {
-      'time': '10:30 - 12:00',
-      'date': date20,
-      'place': place2,
-      'title': 'Python Workshop',
-      'organizer': '',
-      'summary': 'Python, being one of the most widely used language' + 
-      ' with applications in almost every field of computer science is' +
-      ' a must for every computer engineer.' + 
-      ' Some of our senior students, who already possess good knowledge of' +
-      ' Python will be taking up the task of imparting the basic knowledge of Python among students.'
-    },
-listApart,
-    {
-      'time': '15:00 - 16:30',
-      'date': date20,
-      'place': place1,
-      'title': 'Guest Lecture',
-      'organizer': '',
-      'summary': ''
-    },listApart,
+      listApart,
     {
       'time': '17:45 - 19:30',
-      'date': date21,
+      'date': date24,
       'place': place2,
-      'title': 'Android Workshop',
-      'organizer': '',
-      'summary': 'Android has revolutionized the mobile computing '+ 
-                ' by leveraging the power of open source, considering that '+
-                ' Android is itself based on Linux.'+ 
-                ' This workshop will give an insight to students about'+ 
-                ' basics of android development'
-    },listApart,
-    {
-      'time': '17:45 - 19:30',
-      'date': date22,
-      'place': place3,
       'title': 'Network Security Workshop',
-      'organizer': '',
+      'organizer': 'Ankit Shrivastav, Abhishek Bundela',
       'summary':  'Along with the highly connected world comes' +
       ' the issue of data and network security as well. This' +
       ' workshop will focus on showing the students how the power' +
       ' of open source tools like Wireshark can be leveraged to' +
       ' create threat-proof and reliable systems.'
-    },listApart,
+    },
+      listApart,
     {
-      'time': '14:00 - 15:30',
-      'date': date23,
+      'time': '17:45 - 19:30',
+      'date': date25,
+      'place': place2,
+      'title': 'Android Workshop',
+      'organizer': 'Sidra Effendi, Anubha Agrawal',
+      'summary': 'Android has revolutionized the mobile computing '+ 
+                ' by leveraging the power of open source, considering that '+
+                ' Android is itself based on Linux.'+ 
+                ' This workshop will give an insight to students about'+ 
+                ' basics of android development'
+    },
+      listApart,
+    {
+      'time': '10:30 - 12:00',
+      'date': date26,
       'place': place2,
       'title': 'Web Technologies',
-      'organizer': 'Mohit kumar Bajoria, CSE 2nd Year',
+      'organizer':'Tirth Bal, Naval Kumawat and Mohit kumar Bajoria,',
       'summary': 'This workshop covers the basic technologies like HTML and CSS' +
                  'which are behind every web page on Internet.' + 
                  'HTML stands for Hyper Text Markup Language' + 
                  'which is the most widely used language on Web to' + 
                  'develop web pages. CSS is used to control the style' + 
                  'of a web document in a simple and easy way. CSS is the acronym for "Cascading Style Sheet.' 
-    },listApart,
+    },
+      listApart,
     {
-      'time': '17:45 - 19:30',
-      'date': date24,
-      'place': place2,
-      'title': 'Arduino Workshop ',
+      'time': '14:00 - 16:00',
+      'date': date26,
+      'place': place1,
+      'title': 'Guest Lecture',
       'organizer': '',
-      'summary': 'Arduino is an open source microcontroller intended '+ 
-                  ' to make applications of interactive objects.'+
-                  ' It is a major component of robotics and intelligent' +
-                  ' electronic and mechanical devices. Since Arduino is' +
-                  ' an open source platform licensed under creative common' +
-                  ' license, it can be used to extend it’s basic functionality' +
-                  ' by coding new operations.' +
-                  ' This workshop is more of a generic nature'+ 
-                  ' intended towards all the engineering students as a whole.'
-    },listApart,
-    {
-      'time': '17:45 - 19:30',
-      'date': date25,
-      'place': place2,
-      'title': 'Open Source-The Movie',
-      'organizer': '',
-      'summary': 'A medium length movie to based on the philoshophy of open data.'
+      'summary': ''
     },
     listApart,
     {
-      'time': '10:30 - 10:50',
+      'time': '16:00 - 17:30',
       'date': date26,
+      'place': place2,
+      'title': 'Python Workshop',
+      'organizer': 'Abhyuday Pratap Singh, Abhishek Choudhary, Lavee Singh',
+      'summary': 'Python, being one of the most widely used language' + 
+      ' with applications in almost every field of computer science is' +
+      ' a must for every computer engineer.' + 
+      ' Some of our senior students, who already possess good knowledge of' +
+      ' Python will be taking up the task of imparting the basic knowledge of Python among students.'
+    },
+     listApart,
+    {
+      'time': '10:30 - 10:50',
+      'date': date27,
       'place': place3,
-      'title': 'Quiz Competition',
+      'title': 'Online Quiz Competition',
       'organizer': '',
       'summary': 'This will be an online quiz competition to' +
       ' test the knowledge of participants about open source.' +
@@ -253,10 +239,10 @@ listApart,
       ' Maximum Team Members allowed: 2, Time Limit: 20 Minutes' +
       ' No. of Questions: 15 - 20.'
     },
-    listApart,
+      listApart,
     {
       'time': '11:00 - 11:30',
-      'date': date26,
+      'date': date27,
       'place': place3,
       'title': 'Web maker Competition',
       'organizer': '',
@@ -267,10 +253,11 @@ listApart,
       ' The first three students who complete the task will be winners' +
       ' The task will be based on the web technologies workshop.' +
       ' Time Limit: 30 Minutes.'
-    } ,listApart,
+    },
+      listApart,
     {
       'time': '11:30 - 13:00',
-      'date': date26,
+      'date': date27,
       'place': place3,
        'title': 'Git Py',
        'organizer': '',
@@ -282,10 +269,11 @@ listApart,
       ' complete all the Github tasks will be the winner.'+
       ' There will be a maximum of 2 members in a team.' +
       ' Maximum Team Members Allowed: 2, Time Limit: 90 Minutes.'
-    },listApart,
+    },
+    listApart,
     {
       'time': '13:00 - 13:20',
-      'date': date26,
+      'date': date27,
       'place': place2,
        'title': 'Open Source-The Movie',
        'organizer': '',
@@ -293,7 +281,7 @@ listApart,
     },listApart,
     {
       'time': '14:00 - 16:00',
-      'date': date26,
+      'date': date27,
       'place': place1,
        'title': 'Presentation Competition',
        'organizer': '',
@@ -306,7 +294,7 @@ listApart,
     },listApart,
     {
       'time': '16:00 - 17:30',
-      'date': date26,
+      'date': date27,
       'place': place1,
        'title': 'Closing Ceremony',
        'organizer': '',
