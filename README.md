@@ -1,7 +1,7 @@
 sfd-smvdu 2015
 ==============
 
-The Official repository for Software Freedom Day - SMVDU, to be held from 19th - 26th September, 2015.
+The Official repository for Software Freedom Day - SMVDU, to be held from 21st - 27th September, 2015.
 
 This README file contain all the information you need to start contributing to this repo. If you are still facing any difficulty with the code or setup then simply create an **Issue**. We'll be happy to help.
 
