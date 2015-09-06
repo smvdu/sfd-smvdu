@@ -131,11 +131,8 @@ a.active {
 }
 
 #timer {
-  font-size: 2.5vw;   
-}
-
-#timeleft {
   margin-top: 2%;
+  font-size: 2.5vw; 
 }
 
 .btn-outline {
