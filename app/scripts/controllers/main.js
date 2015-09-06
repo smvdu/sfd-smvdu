@@ -12,7 +12,7 @@ angular.module('sfdSmvduApp')
   .controller('MainCtrl', function ($scope, $firebase, EventsFactory, CollegesFactory) {
 
     /* Registration Form Js code starts here */
-    var ref = new Firebase("https://sfd-smvdu.firebaseio.com/");
+    var ref = new Firebase("https://sfd-2015.firebaseio.com/");
     // create an AngularFire reference to the data
     var sync = $firebase(ref);
 
