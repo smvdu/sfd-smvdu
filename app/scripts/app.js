@@ -196,7 +196,7 @@ app.factory('EventsFactory', function(){
                  'HTML stands for Hyper Text Markup Language' + 
                  'which is the most widely used language on Web to' + 
                  'develop web pages. CSS is used to control the style' + 
-                 'of a web document in a simple and easy way. CSS is the acronym for "Cascading Style Sheet.' 
+                 ' of a web document in a simple and easy way. CSS is the acronym for "Cascading Style Sheet".' 
     },
       listApart,
     {
@@ -205,7 +205,7 @@ app.factory('EventsFactory', function(){
       'place': place1,
       'title': 'Guest Lecture',
       'organizer': '',
-      'summary': ''
+      'summary': 'To be decided'
     },
     listApart,
     {
@@ -298,7 +298,7 @@ app.factory('EventsFactory', function(){
       'place': place1,
        'title': 'Closing Ceremony',
        'organizer': '',
-      'summary': 'Closing Ceremony and Prize distribution of SFD SMVDU 2014.'
+      'summary': 'Closing Ceremony and Prize distribution of SFD SMVDU 2015.'
     }
   ];
 
