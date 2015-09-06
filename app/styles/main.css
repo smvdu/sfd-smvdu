@@ -89,7 +89,7 @@ a.active {
   text-align: center;
   background-color: #EE692A;
   color: #FEF9C4;
-  padding: 175px 0px 100px 0px;
+  padding: 150px 0px 100px 0px;
   min-height: 100%;
 }
 
@@ -133,6 +133,21 @@ a.active {
 #timer {
   margin-top: 2%;
   font-size: 2.5vw; 
+}
+
+#open-logos {
+  margin-top: 4%!important;
+}
+
+#open-logos img:hover {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
 }
 
 .btn-outline {
