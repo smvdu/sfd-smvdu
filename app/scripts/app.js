@@ -205,7 +205,9 @@ app.factory('EventsFactory', function(){
       'place': place1,
       'title': 'Guest Lecture',
       'organizer': '',
-      'summary': 'To be decided'
+      'summary': 'A motivation session about Open Source and Big Data by Mr. Navdeep Singh Gill ' +
+                 '(Founder & CEO at XenonStack and Founder at Spartan Startups X). ' +
+                 'Be ready for a Session full of Energy and Learning.'
     },
     listApart,
     {
