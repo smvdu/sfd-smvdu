@@ -109,7 +109,7 @@ app.factory('EventsFactory', function(){
   var date25='25th September';
   var date26='26th September';
   var date27='27th September';    
-  var place1 = 'Sanskriti Kaksh', place2 = 'Lecture Hall-A', place3 = 'Internet Lab';
+  var place1 = 'Lecture Hall - D', place2 = 'Lecture Hall - D', place3 = 'Internet Lab';
   var listApart = {
       'time': '',
       'date': '',
