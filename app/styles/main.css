@@ -135,10 +135,18 @@ a.active {
   font-size: 2.5vw; 
 }
 
-#sponsors
-{
+#sponsors {
+  margin-top: 2.5vw;
   font-size: 1.5vw;
   font-weight: bold;
+}
+
+#open-logos {
+  margin-top: 2.5vw!important;
+}
+
+#myModal a {
+  color: #448AFF;
 }
 
 #open-logos img:hover {
