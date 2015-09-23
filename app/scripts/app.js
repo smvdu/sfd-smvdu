@@ -190,11 +190,11 @@ app.factory('EventsFactory', function(){
       'date': date26,
       'place': place2,
       'title': 'Web Technologies',
-      'organizer':'Tirth Bal, Naval Kumawat and Mohit kumar Bajoria,',
+      'organizer':'Tirth Bal, Naval Kumawat and Mohit kumar Bajoria',
       'summary': 'This workshop covers the basic technologies like HTML and CSS' +
                  'which are behind every web page on Internet.' + 
                  'HTML stands for Hyper Text Markup Language' + 
-                 'which is the most widely used language on Web to' + 
+                 ' which is the most widely used language on Web to' + 
                  'develop web pages. CSS is used to control the style' + 
                  ' of a web document in a simple and easy way. CSS is the acronym for "Cascading Style Sheet".' 
     },
