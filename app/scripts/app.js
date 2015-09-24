@@ -163,19 +163,6 @@ app.factory('EventsFactory', function(){
       'time': '17:45 - 19:30',
       'date': date24,
       'place': place2,
-      'title': 'Network Security Workshop',
-      'organizer': 'Ankit Shrivastav, Abhishek Bundela',
-      'summary':  'Along with the highly connected world comes' +
-      ' the issue of data and network security as well. This' +
-      ' workshop will focus on showing the students how the power' +
-      ' of open source tools like Wireshark can be leveraged to' +
-      ' create threat-proof and reliable systems.'
-    },
-      listApart,
-    {
-      'time': '17:45 - 19:30',
-      'date': date25,
-      'place': place2,
       'title': 'Android Workshop',
       'organizer': 'Sidra Effendi, Anubha Agrawal',
       'summary': 'Android has revolutionized the mobile computing '+ 
@@ -183,6 +170,19 @@ app.factory('EventsFactory', function(){
                 ' Android is itself based on Linux.'+ 
                 ' This workshop will give an insight to students about'+ 
                 ' basics of android development'
+    },
+      listApart,
+    {
+      'time': '17:45 - 19:30',
+      'date': date25,
+      'place': place2,
+      'title': 'Network Security Workshop',
+      'organizer': 'Ankit Shrivastav, Abhishek Bundela',
+      'summary':  'Along with the highly connected world comes' +
+      ' the issue of data and network security as well. This' +
+      ' workshop will focus on showing the students how the power' +
+      ' of open source tools like Wireshark can be leveraged to' +
+      ' create threat-proof and reliable systems.'
     },
       listApart,
     {

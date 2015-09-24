@@ -295,6 +295,11 @@ a.active {
 #events span {
   font-size: 1.3vw;
 }
+
+#slides-popup {
+  text-align: center;
+}
+
 /*-------------------Event page ends-----------------*/
 #registration {
   background-color: #ECF0F1;
