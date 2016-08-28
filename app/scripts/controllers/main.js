@@ -12,7 +12,7 @@ angular.module('sfdSmvduApp')
   .controller('MainCtrl', function ($scope, $firebase, EventsFactory, CollegesFactory) {
 
     /* Registration Form Js code starts here */
-    var ref = new Firebase("https://sfd-2015.firebaseio.com/");
+    var ref = new Firebase("https://sfd-2k16.firebaseio.com/");
     // create an AngularFire reference to the data
     var sync = $firebase(ref);
 
@@ -44,7 +44,7 @@ angular.module('sfdSmvduApp')
       $scope.user.university = $scope.tmp.university1==='other'?$scope.tmp.university2 : $scope.tmp.university1;
       trimData($scope.user);
       if(!isUserExists($scope.user)){
-        $scope.user.password = CryptoJS.MD5($scope.user.password).toString();
+        //$scope.user.password = CryptoJS.MD5($scope.user.password).toString();
         sync.$push($scope.user);
         $scope.form.submit = true;
       }else{
