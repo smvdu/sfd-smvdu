@@ -102,13 +102,13 @@ app.factory('CollegesFactory', function(){
 app.factory('EventsFactory', function(){
 
   var factory = {};
-  var date21='21st September';
-  var date22='22nd September';
-  var date23='23rd September';
-  var date24='24th September';
-  var date25='25th September';
-  var date26='26th September';
-  var date27='27th September';    
+  var date12='12th September';
+  var date13='13th September';
+  var date14='14th September';
+  var date15='15th September';
+  var date16='16th September';
+  var date17='17th September';
+  var date18='18th September';    
   var place1 = 'Lecture Hall - D', place2 = 'Lecture Hall - D', place3 = 'Internet Lab';
   var listApart = {
       'time': '',
@@ -120,20 +120,29 @@ app.factory('EventsFactory', function(){
 
   factory.events = [
       {
-      'time':'17:45 - 19:30',
-      'date': date21,
+      'time':'17:45 - 18:30',
+      'date': date12,
       'place': place1,
-      'title': 'Inaugural Ceremony',
-      'organizer': 'Atul Mishra',
-      'summary': 'What is FOSS ?'
+      'title': 'Inaugural Ceremony(Online Guest Lecture)',
+      'organizer': 'XYZ',
+      'summary': 'Online Guest Lecture will be conducted'
+    },
+      listApart,
+    {
+      'time': '18:30 - 19:45',
+      'date': date12,
+      'place': place2,
+      'title': 'What is FOSS',
+      'organizer': 'ABC',
+      'summary': 'Brief about Free & Open Source Software'
     },
     listApart,
     {
-      'time': '17:45 - 19:30',
-      'date': date22,
+      'time': '18:00 - 19:45',
+      'date': date13,
       'place': place2,
       'title': 'Linux Workshop',
-      'organizer': 'Anmol Sharma, Afshan Massarat',
+      'organizer': 'ABC',
       'summary': 'Unix/Linux are generally seen as the root of Open' +
       ' Source revolution. Hence, it is a mandatory knowledge for any' +
       ' one who is going to work with computers. Open Source is at the' +
@@ -145,11 +154,61 @@ app.factory('EventsFactory', function(){
     },
     listApart,
     {
-      'time': '17:45 - 19:30',
-      'date': date23,
+      'time': '18:00 - 19:45',
+      'date': date14,
+      'place': place2,
+      'title': 'Python Workshop',
+      'organizer': 'XYZ',
+      'summary': 'Python, being one of the most widely used language' + 
+      ' with applications in almost every field of computer science is' +
+      ' a must for every computer engineer.' + 
+      ' Some of our senior students, who already possess good knowledge of' +
+      ' Python will be taking up the task of imparting the basic knowledge of Python among students.'
+    },
+    listApart,
+    {
+      'time': '18:00 - 19:45',
+      'date': date15,
+      'place': place2,
+      'title': 'Web Technologies',
+      'organizer':'ABC',
+      'summary': 'This workshop covers the basic technologies like HTML and CSS' +
+                 'which are behind every web page on Internet.' + 
+                 'HTML stands for Hyper Text Markup Language' + 
+                 ' which is the most widely used language on Web to' + 
+                 'develop web pages. CSS is used to control the style' + 
+                 ' of a web document in a simple and easy way. CSS is the acronym for "Cascading Style Sheet".' 
+    },
+      listApart,
+    {
+      'time': '18:00 - 19:45',
+      'date': date16,
+      'place': place2,
+      'title': 'Android Workshop',
+      'organizer': 'XYZ',
+      'summary': 'Android has revolutionized the mobile computing '+ 
+                ' by leveraging the power of open source, considering that '+
+                ' Android is itself based on Linux.'+ 
+                ' This workshop will give an insight to students about'+ 
+                ' basics of android development'
+    },
+      listApart,
+    {
+      'time': '14:00 - 16:00',
+      'date': date17,
+      'place': place2,
+      'title': 'Guest Lecture 1',
+      'organizer': 'Someone Great 1',
+      'summary':'summary .....' 
+        
+    },
+    listApart,
+    {
+      'time': '16:00 - 17:30',
+      'date': date17,
       'place': place2,
       'title': 'Github Workshop',
-      'organizer': 'Parbhat Puri, Abhishek kumar Tiwari',
+      'organizer': 'ABC',
       'summary':'In past 6 years Github has turned out to be the' +
       ' most widely used platform for programmers and organizations' +
       ' all around the globe to share and collaborate on open source' +
@@ -160,72 +219,18 @@ app.factory('EventsFactory', function(){
     },
       listApart,
     {
-      'time': '17:45 - 19:30',
-      'date': date24,
+      'time': '18:00 - 20:00',
+      'date': date17,
       'place': place2,
-      'title': 'Android Workshop',
-      'organizer': 'Sidra Effendi, Anubha Agrawal',
-      'summary': 'Android has revolutionized the mobile computing '+ 
-                ' by leveraging the power of open source, considering that '+
-                ' Android is itself based on Linux.'+ 
-                ' This workshop will give an insight to students about'+ 
-                ' basics of android development'
+      'title': 'Guest Lecture 2',
+      'organizer': 'Someone Great 2',
+      'summary':'Summary ....'
+      
     },
       listApart,
-    {
-      'time': '17:45 - 19:30',
-      'date': date25,
-      'place': place2,
-      'title': 'Network Security Workshop',
-      'organizer': 'Ankit Shrivastav, Abhishek Bundela',
-      'summary':  'Along with the highly connected world comes' +
-      ' the issue of data and network security as well. This' +
-      ' workshop will focus on showing the students how the power' +
-      ' of open source tools like Wireshark can be leveraged to' +
-      ' create threat-proof and reliable systems.'
-    },
-      listApart,
-    {
-      'time': '10:30 - 12:00',
-      'date': date26,
-      'place': place2,
-      'title': 'Web Technologies',
-      'organizer':'Tirth Bal, Naval Kumawat and Mohit kumar Bajoria',
-      'summary': 'This workshop covers the basic technologies like HTML and CSS' +
-                 'which are behind every web page on Internet.' + 
-                 'HTML stands for Hyper Text Markup Language' + 
-                 ' which is the most widely used language on Web to' + 
-                 'develop web pages. CSS is used to control the style' + 
-                 ' of a web document in a simple and easy way. CSS is the acronym for "Cascading Style Sheet".' 
-    },
-      listApart,
-    {
-      'time': '14:00 - 16:00',
-      'date': date26,
-      'place': place1,
-      'title': 'Guest Lecture',
-      'organizer': '',
-      'summary': 'A motivation session about Open Source and Big Data by Mr. Navdeep Singh Gill ' +
-                 '(Founder & CEO at XenonStack and Founder at Spartan Startups X). ' +
-                 'Be ready for a Session full of Energy and Learning.'
-    },
-    listApart,
-    {
-      'time': '16:00 - 17:30',
-      'date': date26,
-      'place': place2,
-      'title': 'Python Workshop',
-      'organizer': 'Abhyuday Pratap Singh, Abhishek Choudhary, Lavee Singh',
-      'summary': 'Python, being one of the most widely used language' + 
-      ' with applications in almost every field of computer science is' +
-      ' a must for every computer engineer.' + 
-      ' Some of our senior students, who already possess good knowledge of' +
-      ' Python will be taking up the task of imparting the basic knowledge of Python among students.'
-    },
-     listApart,
     {
       'time': '10:30 - 10:50',
-      'date': date27,
+      'date': date18,
       'place': place3,
       'title': 'Online Quiz Competition',
       'organizer': '',
@@ -244,7 +249,7 @@ app.factory('EventsFactory', function(){
       listApart,
     {
       'time': '11:00 - 11:30',
-      'date': date27,
+      'date': date18,
       'place': place3,
       'title': 'Web maker Competition',
       'organizer': '',
@@ -259,7 +264,7 @@ app.factory('EventsFactory', function(){
       listApart,
     {
       'time': '11:30 - 13:00',
-      'date': date27,
+      'date': date18,
       'place': place3,
        'title': 'Git Py',
        'organizer': '',
@@ -275,7 +280,7 @@ app.factory('EventsFactory', function(){
     listApart,
     {
       'time': '13:00 - 13:20',
-      'date': date27,
+      'date': date18,
       'place': place2,
        'title': 'Open Source-The Movie',
        'organizer': '',
@@ -283,7 +288,7 @@ app.factory('EventsFactory', function(){
     },listApart,
     {
       'time': '14:00 - 16:00',
-      'date': date27,
+      'date': date18,
       'place': place1,
        'title': 'Presentation Competition',
        'organizer': '',
@@ -296,7 +301,7 @@ app.factory('EventsFactory', function(){
     },listApart,
     {
       'time': '16:00 - 17:30',
-      'date': date27,
+      'date': date18,
       'place': place1,
        'title': 'Closing Ceremony',
        'organizer': '',
