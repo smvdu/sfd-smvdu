@@ -33,16 +33,16 @@ ul {
 
 a{
   text-decoration: none;
-  color: #FEF9C4;
+  color: #fff;
 }
 
 a:hover{
   text-decoration: none;
-  color: #FEF9C4;
+  color: #fff;
 }
 
 a.active {
-  border-bottom: 2px solid #FEF9C4;
+  border-bottom: 2px solid #fff;
 }
 
 /*reduces the padding of header*/
@@ -53,10 +53,10 @@ a.active {
 /*---------------- Header Section --------------*/
 #main-header{
   position: fixed;
-  color: #FEF9C4;
+  color: #fff;
   width: 100%;
   padding: 60px;
-  background-color: #EE692A;
+  background-color: #104661;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -79,7 +79,7 @@ a.active {
 }
 
 #main-header ul li:hover {
-  border-bottom: 2px solid #FEF9C4;
+  border-bottom: 2px solid #fff;
   cursor: pointer;
 }
 
@@ -87,8 +87,8 @@ a.active {
 /*---------------- Home Section ---------------*/
 #home {
   text-align: center;
-  background-color: #EE692A;
-  color: #FEF9C4;
+  background-color: #104661;
+  color: #fff;
   padding: 150px 0px 100px 0px;
   min-height: 100%;
 }
@@ -161,8 +161,8 @@ a.active {
 }
 
 .btn-outline {
-  color: #FEF9C4;
-  border-color: #FEF9C4;
+  color: #fff;
+  border-color: #fff;
   border-width: 2px;
   background-color: transparent;
   font-size: 2.5vw;
@@ -171,18 +171,18 @@ a.active {
 }
 
 .btn-outline:hover {
-    background-color: #FEF9C4;
-    color: #EE692A;
+    background-color: #fff;
+    color: #104661;
 }
 
 .current {
-  background-color: #FEF9C4;
+  background-color: #fff;
   color: #fff;
 }
 
 #about, #registration, #events {
-  background-color: #FEF9C4;
-  color: #EE692A;
+  background-color: #99cc99;
+  color: #fff;
   display: flex;
   align-items: center;
   padding: 0px 8%;
@@ -196,7 +196,7 @@ a.active {
 
 .bold {
   font-weight: bold;
-  background-color: #FAE4AC;
+  background-color: #104661;
   padding: 0.1% 1%;
   border-radius: 4px;
 }
@@ -241,7 +241,7 @@ a.active {
 
 .date-time-place {
   width: 18%;
-  border-right: 4px solid #EE692A;
+  border-right: 4px solid #104661;
   padding: 1% 0;
 }
 
@@ -337,12 +337,12 @@ footer {
 }
 
 #license-content a {
-  color: #EE692A;
+  color: #104661;
 }
 
 #license-content a:hover, #follow a:hover {
   text-decoration: underline;
-  color: #EE692A;
+  color: #104661;
 }
 
 #follow a{
