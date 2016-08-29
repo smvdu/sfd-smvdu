@@ -181,8 +181,8 @@ a.active {
 }
 
 #about, #registration, #events {
-  background-color: #99cc99;
-  color: #fff;
+  background-color: #fff;
+  color: #104661;
   display: flex;
   align-items: center;
   padding: 0px 8%;
@@ -196,7 +196,6 @@ a.active {
 
 .bold {
   font-weight: bold;
-  background-color: #104661;
   padding: 0.1% 1%;
   border-radius: 4px;
 }
@@ -204,7 +203,7 @@ a.active {
 /*------------------Event page-----------------*/
 
 #events {
-  background-color: #3D3D3D;
+  background-color: #104661;
   color: #fff;
   padding-top: 7%;
   padding-bottom: 3%;
@@ -241,12 +240,12 @@ a.active {
 
 .date-time-place {
   width: 18%;
-  border-right: 4px solid #104661;
+  border-right: 4px solid #fff;
   padding: 1% 0;
 }
 
 .list-apart .date-time-place {
-  border-right: 2px solid #ccc;
+  border-right: 0px solid #ccc;
   height: 25px;
 }
 

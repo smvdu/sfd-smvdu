@@ -305,7 +305,7 @@ app.factory('EventsFactory', function(){
       'place': place1,
        'title': 'Closing Ceremony',
        'organizer': '',
-      'summary': 'Closing Ceremony and Prize distribution of SFD SMVDU 2015.'
+      'summary': 'Closing Ceremony and Prize distribution of SFD SMVDU 2016.'
     }
   ];
 
