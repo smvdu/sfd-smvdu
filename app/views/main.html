@@ -79,8 +79,8 @@
     <ul>
       <li ng-repeat="event in events track by $index" ng-class="checkListApart($index)">
         <div class="date-time-place">
-          <div class="date" ng-show="summary[$index]"><i class="fa fa-calendar-o"></i> {{event.date}}</div>
-          <div class="time"><i class="fa fa-clock-o"></i> {{event.time}}</div>
+          <div class="date"><i class="fa fa-calendar-o"></i> {{event.date}}</div>
+          <div class="time" ng-show="summary[$index]"><i class="fa fa-clock-o"></i> {{event.time}}</div>
           <div class="place" ng-show="summary[$index]"><i class="fa fa-map-marker"></i> {{event.place}}</div>
         </div>
         <div class="event-info-wrapper">

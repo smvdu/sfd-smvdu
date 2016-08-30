@@ -382,7 +382,8 @@ footer {
 
 #reach iframe {
   height: 100%;
-  width: 100%;
+  width: 50%;
+  margin-left: 49%;
   border: none !important;
 }
 
