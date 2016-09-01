@@ -1,20 +1,11 @@
 /*-------------- Common Styles -------------*/
-@font-face {
-  src: url('../fonts/stratum-2-web.woff');
-  font-family: 'stratum';
-}
-
-@font-face {
-  src: url('../fonts/stratum-2-web-bold.woff');
-  font-family: 'stratum-bold';
-}
 
 * {
   transition: 0.3s all;
 }
 
 html, body, body > div {
-  font-family: 'stratum';
+  font-family:'Open Sans', "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
   height: 100%;
 }
 
@@ -383,7 +374,6 @@ footer {
 #reach iframe {
   height: 100%;
   width: 50%;
-  margin-left: 49%;
   border: none !important;
 }
 
