@@ -184,13 +184,13 @@ app.factory('EventsFactory', function(){
       'time': '18:00 - 19:45',
       'date': date16,
       'place': place2,
-      'title': 'Android Workshop',
+      'title': 'Network Security Workshop',
       'organizer': 'XYZ',
-      'summary': 'Android has revolutionized the mobile computing '+ 
-                ' by leveraging the power of open source, considering that '+
-                ' Android is itself based on Linux.'+ 
-                ' This workshop will give an insight to students about'+ 
-                ' basics of android development'
+      'summary':'Along with the highly connected world comes' +
+       ' the issue of data and network security as well. This' +
+       ' workshop will focus on showing the students how the power' +
+       ' of open source tools like Wireshark can be leveraged to' +
+       ' create threat-proof and reliable systems.'
     },
       listApart,
     {
