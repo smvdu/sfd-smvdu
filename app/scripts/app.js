@@ -134,7 +134,7 @@ app.factory('EventsFactory', function(){
       'date': date12,
       'place': place2,
       'title': 'What is FOSS',
-      'organizer': 'Abhishek Tiwary,Vijay Krishnavanshi',
+      'organizer': 'Abhishek Tiwary, Vijay Krishnavanshi',
       'summary': 'Brief about Free & Open Source Software'
     },
       listApart,
@@ -157,7 +157,7 @@ app.factory('EventsFactory', function(){
       'date': date14,
       'place': place2,
       'title': 'Python Workshop',
-      'organizer': 'Akash Goel,Tanay Agarwal,Piyush Sharma',
+      'organizer': 'Akash Goel,Tanay Agarwal, Piyush Sharma',
       'summary': 'Python, being one of the most widely used language' + 
       ' with applications in almost every field of computer science is' +
       ' a must for every computer engineer.' + 
@@ -170,7 +170,7 @@ app.factory('EventsFactory', function(){
       'date': date15,
       'place': place2,
       'title': 'Internet Security Workshop',
-      'organizer': 'Abhishek Bundela,Sameer Senger,Amit Yadav',
+      'organizer': 'Abhishek Bundela, Sameer Senger, Amit Yadav',
       'summary':'Along with the highly connected world comes' +
        ' the issue of data and network security as well. This' +
        ' workshop will focus on showing the students how the power' +
@@ -183,7 +183,7 @@ app.factory('EventsFactory', function(){
       'date': date16,
       'place': place2,
       'title': 'Linux Workshop',
-      'organizer': 'Pulkit Goyal,Rushal Verma',
+      'organizer': 'Pulkit Goyal, Rushal Verma',
       'summary': 'Unix/Linux are generally seen as the root of Open' +
       ' Source revolution. Hence, it is a mandatory knowledge for any' +
       ' one who is going to work with computers. Open Source is at the' +
@@ -199,7 +199,7 @@ app.factory('EventsFactory', function(){
       'date': date17,
       'place': place2,
       'title': 'Github Workshop',
-      'organizer': 'Mohit Bajoria,Iresh Mishra',
+      'organizer': 'Mohit Bajoria, Iresh Mishra',
       'summary':'In past 6 years Github has turned out to be the' +
       ' most widely used platform for programmers and organizations' +
       ' all around the globe to share and collaborate on open source' +
@@ -228,10 +228,10 @@ app.factory('EventsFactory', function(){
       'time': '17:30 - 19:30',
       'date': date17,
       'place': place2,
-      'title': 'Guest Lecture by Mr. Gaurav Saini',
+      'title': 'Guest Lecture by Gaurav Saini',
       'organizer': '',
-      'summary':'An innovative session by Mr. Gaurav Saini' + 
-      'Open-source Enthusiastic, Apache OFBiz Consultant & Developer, Internet Marketing and E-commerce expert' + 
+      'summary':'An innovative session by Gaurav Saini' + 
+      ' Open-source Enthusiastic, Apache OFBiz Consultant & Developer, Internet Marketing and E-commerce expert' + 
       'Currently researching on VOIP technologies, beacons stack and Material design.' +
         'Google Summer of Code 2014 with Mifos Initiative worked on AngularJs based Community-app.' +
         'Also, selected as delegate for GSOC Summit in San Fransico and Mifos Summit in Dubai.'    
@@ -280,9 +280,9 @@ app.factory('EventsFactory', function(){
       'time': '17:00 - 19:00',
       'date': date18,
       'place': place2,
-      'title': 'Guest Lecture by Mr. Rishabh Shukla',
+      'title': 'Guest Lecture by Rishabh Shukla',
       'organizer': '',
-      'summary':'An innovative session by Mr. Rishabh Shukla, alumni SMVDU'+
+      'summary':'An innovative session by Rishabh Shukla, alumni SMVDU'+
         'CTO/Deep Learning Researcher(NLP) at Neuron.' +
         'Supervises the research and development work of Neuron\'\s core NLP platform.'
     },
