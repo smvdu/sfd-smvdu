@@ -120,29 +120,70 @@ app.factory('EventsFactory', function(){
 
   factory.events = [
       {
-      'time':'17:45 - 18:30',
+      'time':'17:50 - 18:45',
       'date': date12,
       'place': place1,
-      'title': 'Inaugural Ceremony(Online Guest Lecture)',
-      'organizer': 'XYZ',
-      'summary': 'Online Guest Lecture will be conducted'
+      'title': 'Inaugural Ceremony along with an interactive session',
+      'organizer': '',
+      'summary': 'An interactive session will be conducted'+
+                '& short speeches by Mr. V.V Verma, Dr. Ajay Kaul and Dr. Naveen Gondhi'
     },
       listApart,
     {
-      'time': '18:30 - 19:45',
+      'time': '18:45 - 19:45',
       'date': date12,
       'place': place2,
       'title': 'What is FOSS',
-      'organizer': 'ABC',
+      'organizer': 'Abhishek Tiwary,Vijay Krishnavanshi',
       'summary': 'Brief about Free & Open Source Software'
+    },
+      listApart,
+    {
+      'time': '18:10 - 19:45',
+      'date': date13,
+      'place': place2,
+      'title': 'Web Technologies',
+      'organizer':'Sumit Srivastava,Shivam Luthra, Ariga Tejasimha',
+      'summary': 'This workshop covers the basic technologies like HTML and CSS' +
+                 'which are behind every web page on Internet.' + 
+                 'HTML stands for Hyper Text Markup Language' + 
+                 ' which is the most widely used language on Web to' + 
+                 'develop web pages. CSS is used to control the style' + 
+                 ' of a web document in a simple and easy way. CSS is the acronym for "Cascading Style Sheet".' 
     },
     listApart,
     {
-      'time': '18:00 - 19:45',
-      'date': date13,
+      'time': '18:35 - 19:45',
+      'date': date14,
+      'place': place2,
+      'title': 'Python Workshop',
+      'organizer': 'Akash Goel,Tanay Agarwal,Piyush Sharma',
+      'summary': 'Python, being one of the most widely used language' + 
+      ' with applications in almost every field of computer science is' +
+      ' a must for every computer engineer.' + 
+      ' Some of our senior students, who already possess good knowledge of' +
+      ' Python will be taking up the task of imparting the basic knowledge of Python among students.'
+    },
+      listApart,
+    {
+      'time': '18:10 - 19:45',
+      'date': date15,
+      'place': place2,
+      'title': 'Internet Security Workshop',
+      'organizer': 'Abhishek Bundela,Sameer Senger,Amit Yadav',
+      'summary':'Along with the highly connected world comes' +
+       ' the issue of data and network security as well. This' +
+       ' workshop will focus on showing the students how the power' +
+       ' of open source tools like Wireshark can be leveraged to' +
+       ' create threat-proof and reliable systems.'
+    },
+      listApart,
+    {
+      'time': '18:10 - 19:45',
+      'date': date16,
       'place': place2,
       'title': 'Linux Workshop',
-      'organizer': 'ABC',
+      'organizer': 'Pulkit Goyal,Rushal Verma',
       'summary': 'Unix/Linux are generally seen as the root of Open' +
       ' Source revolution. Hence, it is a mandatory knowledge for any' +
       ' one who is going to work with computers. Open Source is at the' +
@@ -152,63 +193,13 @@ app.factory('EventsFactory', function(){
       ' field but in every field of engineering and even for day to' +
       ' day tasks by non-technical people as well.'
     },
-    listApart,
-    {
-      'time': '18:00 - 19:45',
-      'date': date14,
-      'place': place2,
-      'title': 'Python Workshop',
-      'organizer': 'XYZ',
-      'summary': 'Python, being one of the most widely used language' + 
-      ' with applications in almost every field of computer science is' +
-      ' a must for every computer engineer.' + 
-      ' Some of our senior students, who already possess good knowledge of' +
-      ' Python will be taking up the task of imparting the basic knowledge of Python among students.'
-    },
-    listApart,
-    {
-      'time': '18:00 - 19:45',
-      'date': date15,
-      'place': place2,
-      'title': 'Web Technologies',
-      'organizer':'ABC',
-      'summary': 'This workshop covers the basic technologies like HTML and CSS' +
-                 'which are behind every web page on Internet.' + 
-                 'HTML stands for Hyper Text Markup Language' + 
-                 ' which is the most widely used language on Web to' + 
-                 'develop web pages. CSS is used to control the style' + 
-                 ' of a web document in a simple and easy way. CSS is the acronym for "Cascading Style Sheet".' 
-    },
       listApart,
     {
-      'time': '18:00 - 19:45',
-      'date': date16,
-      'place': place2,
-      'title': 'Network Security Workshop',
-      'organizer': 'XYZ',
-      'summary':'Along with the highly connected world comes' +
-       ' the issue of data and network security as well. This' +
-       ' workshop will focus on showing the students how the power' +
-       ' of open source tools like Wireshark can be leveraged to' +
-       ' create threat-proof and reliable systems.'
-    },
-      listApart,
-    {
-      'time': '14:00 - 16:00',
-      'date': date17,
-      'place': place2,
-      'title': 'Guest Lecture 1',
-      'organizer': 'Someone Great 1',
-      'summary':'summary .....' 
-        
-    },
-    listApart,
-    {
-      'time': '16:00 - 17:30',
+      'time': '11:00 - 12:30',
       'date': date17,
       'place': place2,
       'title': 'Github Workshop',
-      'organizer': 'ABC',
+      'organizer': 'Mohit Bajoria,Iresh Mishra',
       'summary':'In past 6 years Github has turned out to be the' +
       ' most widely used platform for programmers and organizations' +
       ' all around the globe to share and collaborate on open source' +
@@ -219,37 +210,8 @@ app.factory('EventsFactory', function(){
     },
       listApart,
     {
-      'time': '18:00 - 20:00',
+      'time': '14:30 - 15:00',
       'date': date17,
-      'place': place2,
-      'title': 'Guest Lecture 2',
-      'organizer': 'Someone Great 2',
-      'summary':'Summary ....'
-      
-    },
-      listApart,
-    {
-      'time': '10:30 - 10:50',
-      'date': date18,
-      'place': place3,
-      'title': 'Online Quiz Competition',
-      'organizer': '',
-      'summary': 'This will be an online quiz competition to' +
-      ' test the knowledge of participants about open source.' +
-      ' Multiple choice questions will be served to participants' +
-      ' and the one submitting first and the highest number of correct' +
-      ' solutions will be crowned as winner. We’ll have Junior and Senior' +
-      ' Sections, considering the fact that Junior students might not be' +
-      ' as familiar with open source as Senior students are.' +
-      ' This quiz competition will be generic in nature covering' +
-      ' all the fields of engineering where open source is used.' +
-      ' Maximum Team Members allowed: 2, Time Limit: 20 Minutes' +
-      ' No. of Questions: 15 - 20.'
-    },
-      listApart,
-    {
-      'time': '11:00 - 11:30',
-      'date': date18,
       'place': place3,
       'title': 'Web maker Competition',
       'organizer': '',
@@ -263,7 +225,20 @@ app.factory('EventsFactory', function(){
     },
       listApart,
     {
-      'time': '11:30 - 13:00',
+      'time': '17:30 - 19:30',
+      'date': date17,
+      'place': place2,
+      'title': 'Guest Lecture by Mr. Gaurav Saini',
+      'organizer': '',
+      'summary':'An innovative session by Mr. Gaurav Saini' + 
+      'Open-source Enthusiastic, Apache OFBiz Consultant & Developer, Internet Marketing and E-commerce expert' + 
+      'Currently researching on VOIP technologies, beacons stack and Material design.' +
+        'Google Summer of Code 2014 with Mifos Initiative worked on AngularJs based Community-app.' +
+        'Also, selected as delegate for GSOC Summit in San Fransico and Mifos Summit in Dubai.'    
+    },
+    listApart,
+    {
+      'time': '10:30 - 12:00',
       'date': date18,
       'place': place3,
        'title': 'Git Py',
@@ -277,17 +252,18 @@ app.factory('EventsFactory', function(){
       ' There will be a maximum of 2 members in a team.' +
       ' Maximum Team Members Allowed: 2, Time Limit: 90 Minutes.'
     },
-    listApart,
+      listApart,
     {
-      'time': '13:00 - 13:20',
+      'time': '14:00 - 14:20',
       'date': date18,
       'place': place2,
        'title': 'Open Source-The Movie',
        'organizer': '',
       'summary': 'A Short movie on the various open sources resources available.'
-    },listApart,
+    },
+      listApart,
     {
-      'time': '14:00 - 16:00',
+      'time': '14:30 - 16:30',
       'date': date18,
       'place': place1,
        'title': 'Presentation Competition',
@@ -298,9 +274,21 @@ app.factory('EventsFactory', function(){
                   'evaluated based on their presentation skills, authenticate '+ 
                   'information, understanding of open source, etc.' +
                   ' Maximum Team Members Allowed: 2, Time Limit: 10 - 12 Minutes.'
-    },listApart,
+    },
+      listApart,
     {
-      'time': '16:00 - 17:30',
+      'time': '17:00 - 19:00',
+      'date': date18,
+      'place': place2,
+      'title': 'Guest Lecture by Mr. Rishabh Shukla',
+      'organizer': '',
+      'summary':'An innovative session by Mr. Rishabh Shukla, alumni SMVDU'+
+        'CTO/Deep Learning Researcher(NLP) at Neuron.' +
+        'Supervises the research and development work of Neuron\'\s core NLP platform.'
+    },
+     listApart,
+    {
+      'time': '19:00 - 20:00',
       'date': date18,
       'place': place1,
        'title': 'Closing Ceremony',
