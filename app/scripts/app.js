@@ -123,10 +123,10 @@ app.factory('EventsFactory', function(){
       'time':'17:50 - 18:45',
       'date': date12,
       'place': place1,
-      'title': 'Inaugural Ceremony along with an interactive session',
+      'title': 'Inaugural Ceremony along with an Interactive session',
       'organizer': '',
-      'summary': 'An interactive session will be conducted'+
-                '& short speeches by Mr. V.V Verma, Dr. Ajay Kaul and Dr. Naveen Gondhi'
+      'summary': 'Interactive Hangout session By Edward Cable'
+                
     },
       listApart,
     {
@@ -134,7 +134,7 @@ app.factory('EventsFactory', function(){
       'date': date12,
       'place': place2,
       'title': 'What is FOSS',
-      'organizer': 'Abhishek Tiwary, Vijay Krishnavanshi',
+      'organizer': 'Abhishek Tiwari, Vijay Krishnavanshi',
       'summary': 'Brief about Free & Open Source Software'
     },
       listApart,
@@ -143,7 +143,7 @@ app.factory('EventsFactory', function(){
       'date': date13,
       'place': place2,
       'title': 'Web Technologies',
-      'organizer':'Sumit Srivastava,Shivam Luthra, Ariga Tejasimha',
+      'organizer':'Sumit Srivastava, Ariga Tejasimha, Shivam Luthra',
       'summary': 'This workshop covers the basic technologies like HTML and CSS' +
                  'which are behind every web page on Internet.' + 
                  'HTML stands for Hyper Text Markup Language' + 
@@ -153,12 +153,12 @@ app.factory('EventsFactory', function(){
     },
     listApart,
     {
-      'time': '18:35 - 19:45',
+      'time': '17:50 - 19:45',
       'date': date14,
       'place': place2,
-      'title': 'Python Workshop',
+      'title': 'Interactive Hangout Session and Python Workshop',
       'organizer': 'Akash Goel,Tanay Agarwal, Piyush Sharma',
-      'summary': 'Python, being one of the most widely used language' + 
+      'summary': 'Hangout session By Christopher Clarke.' + ' Python, being one of the most widely used language' + 
       ' with applications in almost every field of computer science is' +
       ' a must for every computer engineer.' + 
       ' Some of our senior students, who already possess good knowledge of' +
@@ -179,12 +179,12 @@ app.factory('EventsFactory', function(){
     },
       listApart,
     {
-      'time': '18:10 - 19:45',
+      'time': '17:50 - 19:45',
       'date': date16,
       'place': place2,
-      'title': 'Linux Workshop',
-      'organizer': 'Pulkit Goyal, Rushal Verma',
-      'summary': 'Unix/Linux are generally seen as the root of Open' +
+      'title': 'Interactive Hangout Session and Linux Workshop',
+      'organizer': 'Rushal Verma, Pulkit Goyal',
+      'summary': 'Hangout session By Guillaume Catella.' + ' Unix/Linux are generally seen as the root of Open' +
       ' Source revolution. Hence, it is a mandatory knowledge for any' +
       ' one who is going to work with computers. Open Source is at the' +
       ' heart of Linux which allows so many programmers all around the' +
@@ -195,7 +195,7 @@ app.factory('EventsFactory', function(){
     },
       listApart,
     {
-      'time': '11:00 - 12:30',
+      'time': '11:00 - 01:00',
       'date': date17,
       'place': place2,
       'title': 'Github Workshop',
@@ -210,7 +210,7 @@ app.factory('EventsFactory', function(){
     },
       listApart,
     {
-      'time': '14:30 - 15:00',
+      'time': '14:30 - 15:30',
       'date': date17,
       'place': place3,
       'title': 'Web maker Competition',
@@ -225,7 +225,7 @@ app.factory('EventsFactory', function(){
     },
       listApart,
     {
-      'time': '17:30 - 19:30',
+      'time': '17:45 - 19:15',
       'date': date17,
       'place': place2,
       'title': 'Guest Lecture by Gaurav Saini',
@@ -277,18 +277,18 @@ app.factory('EventsFactory', function(){
     },
       listApart,
     {
-      'time': '17:00 - 19:00',
+      'time': '17:45 - 19:00',
       'date': date18,
       'place': place2,
       'title': 'Guest Lecture by Rishabh Shukla',
       'organizer': '',
       'summary':'An innovative session by Rishabh Shukla, alumni SMVDU'+
-        'CTO/Deep Learning Researcher(NLP) at Neuron.' +
+        ' CTO/Deep Learning Researcher(NLP) at Neuron.' +
         'Supervises the research and development work of Neuron\'\s core NLP platform.'
     },
      listApart,
     {
-      'time': '19:00 - 20:00',
+      'time': '19:00 - 19:30',
       'date': date18,
       'place': place1,
        'title': 'Closing Ceremony',
@@ -299,4 +299,3 @@ app.factory('EventsFactory', function(){
 
   return factory;
 });
-
